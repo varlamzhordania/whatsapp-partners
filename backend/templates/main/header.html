@@ -1,0 +1,198 @@
+{% load static %}
+{% load i18n %}
+{% url "main:home" as home %}
+{% url "main:about" as about %}
+{% url "main:contact" as contact %}
+{% get_current_language as CURRENT_LANGUAGE %}
+{% get_available_languages as AVAILABLE_LANGUAGES %}
+{% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+
+<header class="pb-1" id="header">
+    <div class="position-relative">
+        <nav class="position-relative navbar navbar-expand-lg bg-transparent w-100 z-1">
+            <div class="container-fluid mx-0 mx-md-5 ps-2 pe-4 py-1 ps-md-0 pe-md-0 rounded-2 ">
+                <div class="d-flex justify-content-between align-items-center w-100 w-lg-auto gap-2">
+                    <div class="d-flex align-items-center justify-content-start gap-1">
+                        <button class="navbar-toggler btn-sm border-0 outline-0 shadow-none" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbar"
+                                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand " href="{{ home }}">
+                            <img src="{{ page_setting.primary_logo.url }}" width="55" height="55" alt="logo"
+                                 class="h-auto"/>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center gap-2">
+                        <div class="dropdown d-lg-none">
+                            <button class="btn border-0" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                {% if CURRENT_LANGUAGE == 'ar' %}
+                                    <span class="flag-icon flag-icon-sa"></span>
+                                    {{ CURRENT_LANGUAGE|upper }}
+                                {% elif CURRENT_LANGUAGE == 'en' %}
+                                    <span class="flag-icon flag-icon-gb"></span>
+                                    {{ CURRENT_LANGUAGE|upper }}
+                                {% else %}
+                                    <span class="flag-icon flag-icon-{{ CURRENT_LANGUAGE|lower }}"></span>
+                                    {{ CURRENT_LANGUAGE|upper }}
+                                {% endif %}
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end border-0 shadow">
+                                {% for language in languages %}
+                                    <li class="dropdown-item">
+                                        <a class="nav-link{% if language.code == CURRENT_LANGUAGE %} active{% endif %}"
+                                           href="/{{ language.code }}/">
+                                            {% if language.code == 'ar' %}
+                                                <span class="flag-icon flag-icon-sa"></span>
+                                                {{ language.name_local }}
+                                            {% elif language.code == 'en' %}
+                                                <span class="flag-icon flag-icon-gb"></span>
+                                                {{ language.name_local }}
+                                            {% else %}
+                                                <span class="flag-icon flag-icon-{{ language.code|lower }}"></span>
+                                                {{ language.name_local }}
+                                            {% endif %}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% if user.is_authenticated %}
+                            <div class="dropdown d-lg-none">
+                                <button class="btn btn-primary rounded-circle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                    <i class="bi bi-person-fill"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end border-0 shadow">
+                                    {#                                    <li>#}
+                                    {#                                        <a class="dropdown-item d-flex justify-content-start align-items-center gap-3"#}
+                                    {#                                           href="{% url "account:profile" %}">#}
+                                    {#                                            <i class="bi bi-person"></i>#}
+                                    {#                                            <strong>Profile</strong>#}
+                                    {#                                        </a>#}
+                                    {#                                    </li>#}
+                                    <li>
+                                        <a class="dropdown-item d-flex justify-content-start align-items-center gap-3"
+                                           href="{% url "account:logout" %}">
+                                            <i class="bi bi-box-arrow-right"></i>
+                                            <strong>Logout</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        {% else %}
+                            <a class="d-inline d-lg-none btn  btn-secondary rounded-pill fw-bolder text-nowrap text-uppercase"
+                               href="{% url "account:login" %}">{% trans "SignIn" %}</a>
+                            <a class="d-inline d-lg-none btn btn-outline-secondary rounded-pill fw-bolder text-nowrap text-uppercase"
+                               href="{% url "account:register" %}">{% trans "SignUp" %}</a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+                        <li class="nav-item px-3 px-lg-0">
+                            <a class="nav-link {% if request.path == home %}active{% endif %}"
+                               {% if request.path == home %}aria-current="page"{% endif %}
+                               href="{{ home }}">{% trans "Home" %}</a>
+                        </li>
+                        <li class="nav-item px-3 px-lg-0">
+                            <a class="nav-link {% if request.path == about %}active{% endif %}"
+                               {% if request.path == about %}aria-current="page"{% endif %}
+                               href="{{ about }}">
+                                {% trans "My WhatsApp" %}
+                            </a>
+                        </li>
+                        <li class="nav-item px-3 px-lg-0">
+                            <a class="nav-link {% if request.path == about %}active{% endif %}"
+                               {% if request.path == about %}aria-current="page"{% endif %}
+                               href="{{ about }}">
+                                {% trans "Payments" %}
+                            </a>
+                        </li>
+                        <li class="nav-item px-3 px-lg-0">
+                            <a class="nav-link {% if request.path == about %}active{% endif %}"
+                               {% if request.path == about %}aria-current="page"{% endif %}
+                               href="{{ about }}">
+                                {% trans "About US" %}
+                            </a>
+                        </li>
+                        <li class="nav-item px-3 px-lg-0">
+                            <a class="nav-link {% if request.path == contact %}active{% endif %}"
+                               {% if request.path == contact %}aria-current="page"{% endif %}
+                               href="{{ contact }}">
+                                {% trans "Contact us" %}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-lg-inline-flex d-none justify-content-between align-items-center gap-3">
+                    <div class="dropdown">
+                        <button class="btn border-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            {% if CURRENT_LANGUAGE == 'ar' %}
+                                <span class="flag-icon flag-icon-sa"></span>
+                                {{ CURRENT_LANGUAGE|upper }}
+                            {% elif CURRENT_LANGUAGE == 'en' %}
+                                <span class="flag-icon flag-icon-gb"></span>
+                                {{ CURRENT_LANGUAGE|upper }}
+                            {% else %}
+                                <span class="flag-icon flag-icon-{{ CURRENT_LANGUAGE|lower }}"></span>
+                                {{ CURRENT_LANGUAGE|upper }}
+                            {% endif %}
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end border-0 shadow">
+                            {% for language in languages %}
+                                <li class="dropdown-item">
+                                    <a class="nav-link{% if language.code == CURRENT_LANGUAGE %} active{% endif %}"
+                                       href="/{{ language.code }}/">
+                                        {% if language.code == 'ar' %}
+                                            <span class="flag-icon flag-icon-sa"></span>
+                                            {{ language.name_local }}
+                                        {% elif language.code == 'en' %}
+                                            <span class="flag-icon flag-icon-gb"></span>
+                                            {{ language.name_local }}
+                                        {% else %}
+                                            <span class="flag-icon flag-icon-{{ language.code|lower }}"></span>
+                                            {{ language.name_local }}
+                                        {% endif %}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% if user.is_authenticated %}
+                        <div class="dropdown">
+                            <button class="btn btn-primary rounded-circle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                <i class="bi bi-person-fill"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end border-0 shadow">
+                                {#                                <li>#}
+                                {#                                    <a class="dropdown-item d-flex justify-content-start align-items-center gap-3"#}
+                                {#                                       href="{% url "account:profile" %}">#}
+                                {#                                        <i class="bi bi-person"></i>#}
+                                {#                                        <strong>Profile</strong>#}
+                                {#                                    </a>#}
+                                {#                                </li>#}
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-start align-items-center gap-3"
+                                       href="{% url "account:logout" %}">
+                                        <i class="bi bi-box-arrow-right"></i>
+                                        <strong>Logout</strong>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    {% else %}
+                        <a class="btn  btn-secondary rounded-pill fw-bolder text-nowrap text-uppercase"
+                           href="{% url "account:login" %}">{% trans "SignIn" %}</a>
+                        <a class="btn btn-outline-secondary rounded-pill fw-bolder text-nowrap text-uppercase"
+                           href="{% url "account:register" %}">{% trans "SignUp" %}</a>
+                    {% endif %}
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

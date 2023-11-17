@@ -1,0 +1,285 @@
+{% extends "main/index.html" %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-sm-12 col-md-5 col-lg-6 d-flex align-items-center">
+                        <div class="card bg-transparent border-0">
+                            <div class="card-header bg-transparent border-0">
+                                <h1 class="card-title fw-bold">{% trans "Unlock the Earning Potential of Your Dormant <strong class='text-primary'> WhatsApp </strong> Accounts" %}</h1>
+                                <small class="text-secondary fw-bolder">{% trans "Join Our Global Network, Earn up to $2000 Monthly – No Investment Needed!" %}</small>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text fw-normal">
+                                    {% blocktranslate %}
+                                        Do you have old, unused WhatsApp accounts? Or the capability to manage multiple
+                                        accounts? Convert these resources into a steady income stream with our
+                                        cutting-edge
+                                        communication technology. Designed with a focus on the ambitious,
+                                        entrepreneurial
+                                        spirits of developing countries, our partnership program enables you to gain
+                                        additional income effortlessly.
+                                    {% endblocktranslate %}
+                                </p>
+                                <div class="d-flex justify-content-start gap-1 align-items-center">
+                                    <a class="btn btn-primary rounded-pill fw-bold">
+                                        {% trans "Become a Partner" %}
+                                    </a>
+                                    <a class="btn btn-outline-primary rounded-pill fw-bold">
+                                        {% trans "Learn more" %}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col col-12 col-sm-12 col-md-7 col-lg-6">
+                        <div class="card border-0 bg-transparent">
+                            <img src="{% static "assets/img/hero.jpeg" %}" alt="hero picture" class="card-img"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-5">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-gap-4">
+                    <div class="col">
+                        <div class="card card-hover h-100 border-0 bg-primary-subtle h-100 ">
+                            <div class="card-header bg-transparent border-0">
+                                <h4 class="card-title text-dark fw-bolder my-2">
+                                    {% trans "Effortless Setup" %}
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    {% blocktranslate %}
+                                        Embark on your journey with just three unused WhatsApp accounts and a stable
+                                        internet connection. Our step-by-step guide ensures a seamless setup process.
+                                    {% endblocktranslate %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-hover h-100 border-0 bg-primary-subtle">
+                            <div class="card-header bg-transparent border-0">
+                                <h4 class="card-title text-dark fw-bolder my-2">
+                                    {% trans "Passive Earning Made Simple" %}
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    {% blocktranslate %}
+                                        Integrate your WhatsApp accounts into our expansive conference system and start
+                                        earning with minimal daily effort. Your unused accounts become a consistent
+                                        source of income effortlessly.
+                                    {% endblocktranslate %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-hover h-100 border-0 bg-primary-subtle">
+                            <div class="card-header bg-transparent border-0">
+                                <h4 class="card-title text-dark fw-bolder my-2">
+                                    {% trans "Scalable Opportunity Awaits" %}
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    {% blocktranslate %}
+                                        Unlock the potential of your earnings by effortlessly managing up to 60 WhatsApp
+                                        accounts all under one roof. Watch your profit scale as you expand your network.
+                                    {% endblocktranslate %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-6">
+                        <div class="card border-0 bg-transparent">
+                            <img src="{% static "assets/img/question.jpg" %}" alt="question picture" class="card-img"/>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6 d-flex align-items-center">
+                        <div class="card bg-transparent border-0">
+                            <div class="card-header bg-transparent border-0">
+                                <h2 class="card-title fw-bold">{% trans "Why Be a <strong class='text-primary'>Partner?</strong>" %}</h2>
+                                <small class="text-secondary fw-bolder">{% trans "Explore Unlimited Earning Potential" %}</small>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text fw-normal">
+                                    {% blocktranslate %}
+                                        Discover the exciting potential of your unused WhatsApp account. Be a partner
+                                        with WhatsApp Partners and tap into a world of opportunities to earn while
+                                        contributing to a global communication network.
+                                    {% endblocktranslate %}
+                                </p>
+                                <div class="d-flex my-4 justify-content-between align-items-center">
+                                    <div class="d-flex justify-content-start align-items-center gap-1">
+                                        <span class="ball ball-warning"></span>
+                                        <h3 class="fw-bold fs-5 mb-0">{% trans "Flexible Work" %}</h3>
+                                    </div>
+                                    <div class="d-flex justify-content-start align-items-center gap-1">
+                                        <span class="ball ball-danger"></span>
+                                        <h3 class="fw-bold fs-5 mb-0">{% trans "Generous Rewards" %}</h3>
+                                    </div>
+                                </div>
+                                <p class="card-text fw-normal">
+                                    {% blocktranslate %}
+                                        Enjoy the flexibility of working on your terms. Our partnership program is
+                                        designed to provide you with generous rewards for every conference session
+                                        conducted through your WhatsApp account.
+                                    {% endblocktranslate %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-6 d-flex align-items-center">
+                        <div class="card bg-transparent border-0">
+                            <div class="card-header bg-transparent border-0">
+                                <h2 class="card-title fw-bold">{% trans "How It <strong class='text-primary'>Works</strong>" %}</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="row row-gap-3">
+                                    <div class="col col-12 col-md-6">
+                                        <div class="card card-hover bg-transparent h-100">
+                                            <div class="card-header bg-transparent border-0">
+                                                <h4 class="card-title text-secondary fw-bolder my-2">
+                                                    {% trans "Register" %}
+                                                </h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    {% blocktranslate %}
+                                                        Joining WhatsApp Partners is easy. Simply register your
+                                                        WhatsApp account,
+                                                        providing accurate information to ensure seamless transactions.
+                                                    {% endblocktranslate %}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-12 col-md-6">
+                                        <div class="card card-hover bg-transparent h-100">
+                                            <div class="card-header bg-transparent border-0">
+                                                <h4 class="card-title text-secondary fw-bolder my-2">
+                                                    {% trans "Earning" %}
+                                                </h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    {% blocktranslate %}
+                                                        Learn how your WhatsApp account can become a revenue-generating
+                                                        asset.
+                                                        We'll
+                                                        guide you through the process of earning with each successful
+                                                        conference
+                                                        session.
+                                                    {% endblocktranslate %}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-12 col-md-12">
+                                        <div class="card card-hover bg-transparent h-100">
+                                            <div class="card-header bg-transparent border-0">
+                                                <h4 class="card-title text-secondary fw-bolder my-2">
+                                                    {% trans "Payment" %}
+                                                </h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    {% blocktranslate %}
+                                                        JUnderstand our transparent payment process. Learn how we value
+                                                        your
+                                                        contribution and ensure timely and hassle-free payments.
+                                                    {% endblocktranslate %}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6">
+                        <div class="card border-0 bg-transparent">
+                            <img src="{% static "assets/img/work-process.jpg" %}" alt="work process" class="card-img"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% include "main/join_us.html" %}
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-6">
+                        <div class="card border-0 bg-transparent">
+                            <img src="{% static "assets/img/risk.jpg" %}" alt="question picture" class="card-img"/>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6 d-flex align-items-center">
+                        <div class="card bg-transparent border-0">
+                            <div class="card-header bg-transparent border-0">
+                                <h2 class="card-title fw-bold">{% trans "Questions or Concerns?" %}</h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text fw-normal">
+                                    {% blocktranslate %}
+                                        We're here to assist you every step of the way. Contact WhatsApp Partners for
+                                        any inquiries or support you may need.
+                                    {% endblocktranslate %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-6 d-flex align-items-center">
+                        <div class="card bg-transparent border-0">
+                            <div class="card-header bg-transparent border-0">
+                                <h2 class="card-title fw-bold">{% trans "Already a <strong class='text-primary'>Partner?</strong>" %}</h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text fw-normal">
+                                    {% blocktranslate %}
+                                        Log in to your WhatsApp Partners account to track your communication statistics
+                                        and earnings.
+                                    {% endblocktranslate %}
+                                </p>
+                                <a class="btn btn-primary rounded-pill fw-bold">
+                                    {% trans "SignIn" %}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6">
+                        <div class="card border-0 bg-transparent">
+                            <img src="{% static "assets/img/computer.jpg" %}" alt="question picture" class="card-img"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

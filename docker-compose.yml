@@ -1,0 +1,54 @@
+version: '2.4'
+services:
+  django:
+    restart: always
+    container_name: django
+    build:
+      context: ./backend
+    volumes:
+      - ./backend/:/home/whatsapp/backend
+      - ./cert/:/home/whatsapp
+    command: >
+      bash -c "python manage.py makemigrations && python manage.py migrate && gunicorn -c conf/gunicorn_conf.py core.wsgi:application"
+    expose:
+      - '8000'
+    depends_on:
+      - postgres
+      - redis
+    env_file:
+      - ./backend/.env
+  nginx:
+    restart: always
+    container_name: nginx
+    image: nginx:latest
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./cert/:/home/whatsapp
+      - ./backend/static/:/home/whatsapp/backend/static
+      - ./backend/media/:/home/whatsapp/backend/media
+      - ./backend/staticfiles/:/home/whatsapp/backend/staticfiles
+    depends_on:
+      - django
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    restart: always
+    ports:
+      - '5432:5432'
+    env_file:
+      - ./backend/.env
+    environment:
+      - POSTGRES_DB=${DB_NAME:-campaignMakerDB}
+      - POSTGRES_USER=${DB_USER:-campaignMakerAdmin}
+      - POSTGRES_PASSWORD=${DB_PASSWORD:-aRZXFK0VVNtW817}
+    volumes:
+      - ./pg/:/var/lib/postgresql/data
+  redis:
+    container_name: redis
+    restart: always
+    image: redis
+    ports:
+      - '6379:6379'

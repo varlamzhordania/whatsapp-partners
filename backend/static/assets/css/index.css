@@ -1,0 +1,196 @@
+:root {
+    /* Primary Colors */
+    --primary-color: #25D366;
+    --primary-hover-color: #4CAF50;
+    --primary-active-color: #449e48;
+    --primary-focus-color: #449e48;
+
+    /* Secondary Colors */
+    --secondary-color: #128C7E;
+    --secondary-hover-color: #107e71;
+    --secondary-active-color: #0e7065;
+    --secondary-focus-color: #0e7065;
+
+    /* Background and Text Colors */
+    --background-color: #fff;
+    /*--text-color: #37474F;*/
+    --text-color: #1B2E35;
+
+    /* Accent Colors */
+    --accent-color: #FFC107;
+    --accent-hover-color: #FFD54F;
+    --accent-active-color: #FFA000;
+    --accent-focus-color: #FFA000;
+
+    /* Link Colors */
+    --link-color: #25D366;
+    --link-hover-color: #4CAF50;
+    --link-active-color: #128C7E;
+    --link-focus-color: #128C7E;
+
+    /* Info/Alert, Success, Warning, Danger/Error Colors */
+    --info-color: #4FC3F7;
+    --success-color: #4CAF50;
+    --warning-color: #FFA000;
+    --danger-color: #FF3D00;
+
+
+    --second-font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    font-family: var(--second-font-family) !important;
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    background-color: var(--background-color);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100vw;
+}
+
+
+/* Override Bootstrap Navbar Styles */
+.navbar {
+    background-color: var(--secondary-color);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 800;
+    white-space: nowrap;
+    font-size: 1.2rem;
+
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    background: linear-gradient(to bottom, var(--primary-color), var(--primary-focus-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Override Bootstrap Form Styles */
+.form-control {
+    border-color: var(--secondary-color);
+}
+
+/* Override Bootstrap Alert Styles */
+.alert-info {
+    background-color: var(--info-color);
+    border-color: var(--info-color);
+    color: var(--background-color);
+}
+
+/* Override Bootstrap Success Alert Styles */
+.alert-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+    color: var(--background-color);
+}
+
+/* Override Bootstrap Warning Alert Styles */
+.alert-warning {
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+    color: var(--background-color);
+}
+
+/* Override Bootstrap Danger Alert Styles */
+.alert-danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+    color: var(--background-color);
+}
+
+/* Override Bootstrap Link Styles */
+a {
+    color: var(--link-color);
+}
+
+a:hover,
+a:focus {
+    color: var(--link-hover-color);
+}
+
+.card-hover {
+    transition: 0.3s;
+}
+
+.card-hover:hover {
+    border-color: var(--primary-hover-color);
+}
+
+.hero {
+    padding-top: 2rem;
+}
+
+.ball {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.ball-primary {
+    background-color: var(--primary-color);
+}
+
+.ball-secondary {
+    background-color: var(--secondary-color);
+}
+
+.ball-info {
+    background-color: var(--info-color);
+}
+
+.ball-warning {
+    background-color: var(--warning-color);
+}
+
+.ball-success {
+    background-color: var(--success-color);
+}
+
+.ball-danger {
+    background-color: var(--danger-color);
+}
+
+@media screen and (min-width: 0) {
+
+}
+
+@media screen and (min-width: 576px) {
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+
+    .w-lg-auto {
+        width: auto !important;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+
+}
+

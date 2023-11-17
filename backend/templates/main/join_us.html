@@ -1,0 +1,21 @@
+{% load i18n %}
+<section class="my-5">
+    <div class="container">
+        <div class="card bg-primary-subtle text-center">
+            <div class="card-header border-0 bg-transparent mt-3">
+                <h2 class="fw-bolder mb-0">{% trans "Join WhatsApp Partners" %}</h2>
+            </div>
+            <div class="card-body">
+                <p class="fw-bold">
+                    {% blocktranslate %}
+                        Ready to transform your WhatsApp account into a valuable asset? Register now to become a
+                        partner and start earning!
+                    {% endblocktranslate %}
+                </p>
+                <a class="btn btn-primary rounded-pill fw-bold text-light">
+                    {% trans "Become a Partner" %}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

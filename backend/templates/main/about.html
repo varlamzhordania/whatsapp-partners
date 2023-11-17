@@ -1,0 +1,151 @@
+{% extends "main/index.html" %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+    <main>
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-6">
+                        <div class="card bg-transparent border-0">
+                            <img src="{% static "assets/img/about.jpg" %}" alt="about us picture" class="card-img"/>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6 d-flex align-items-center">
+                        <div class="card border-0 bg-transparent">
+                            <div class="card-header bg-transparent border-0">
+                                <h1 class="card-title fw-bold">{% trans "<strong class='text-primary'>WhatsApp</strong> Partners" %}</h1>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text ">
+                                    {% blocktranslate %}
+                                        Welcome to WhatsApp Partners, where innovation meets opportunity. We are a
+                                        community
+                                        of
+                                        visionaries, leveraging the power of unused WhatsApp accounts to create a
+                                        network of
+                                        partners earning together. Our platform is designed to simplify the process,
+                                        turning
+                                        your dormant accounts into valuable assets that contribute to a connected,
+                                        collaborative
+                                        world.
+                                    {% endblocktranslate %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-6 d-flex align-items-center">
+                        <div class="card border-0 bg-transparent">
+                            <div class="card-header bg-transparent border-0">
+                                <h2 class="card-title fw-bold">{% trans "Our <strong class='text-primary'>Mission</strong>" %}</h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text ">
+                                    {% blocktranslate %}
+                                        At WhatsApp Partners, our mission is clear: to empower individuals globally by
+                                        unlocking the potential within their unused WhatsApp accounts. We're committed
+                                        to
+                                        providing a platform that transcends traditional communication, fostering an
+                                        environment where our partners not only connect but also earn seamlessly.
+                                    {% endblocktranslate %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6">
+                        <div class="card bg-transparent border-0">
+                            <img src="{% static "assets/img/mission.jpg" %}" alt="our mission picture"
+                                 class="card-img"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-6">
+                        <div class="card bg-transparent border-0">
+                            <img src="{% static "assets/img/puzzle.jpg" %}"
+                                 alt="What Sets WhatsApp Partners Apart picture" class="card-img"/>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6 d-flex align-items-center">
+                        <div class="card border-0 bg-transparent">
+                            <div class="card-header bg-transparent border-0">
+                                <h2 class="card-title fw-bold">{% trans "What Sets <strong class='text-primary'>WhatsApp </strong>Partners Apart" %}</h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text ">
+                                    {% blocktranslate %}
+                                        <strong class="fw-bolder fs-5 text-secondary ">Innovation in
+                                            Connectivity:</strong>
+                                        We
+                                        pride ourselves on being at the forefront of
+                                        innovation. Our platform is built on cutting-edge technology, ensuring a
+                                        seamless experience from the initial setup to ongoing earnings. WhatsApp
+                                        Partners is where innovation meets practicality.
+                                    {% endblocktranslate %}
+                                </p>
+                                <p class="card-text ">
+                                    {% blocktranslate %}
+                                        <strong class="fw-bolder fs-5 text-secondary ">Effortless Passive
+                                            Earning:</strong>
+                                        We understand the importance of simplicity and
+                                        efficiency. Our system is crafted to enable passive earning with minimal daily
+                                        effort. Your unused WhatsApp accounts become a reliable source of income,
+                                        effortlessly.
+                                    {% endblocktranslate %}
+                                </p>
+                                <p class="card-text ">
+                                    {% blocktranslate %}
+                                        <strong class="fw-bolder fs-5 text-secondary ">Scalable Opportunities:</strong>
+                                        Whether you're managing a few accounts or aiming for 60,
+                                        WhatsApp Partners provides the tools and support you need. As you expand your
+                                        network, your potential earnings grow. We believe in the scalability of success.
+                                    {% endblocktranslate %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% include "main/join_us.html" %}
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-6 d-flex align-items-center">
+                        <div class="card border-0 bg-transparent">
+                            <div class="card-header bg-transparent border-0">
+                                <h2 class="card-title fw-bold">{% trans "Join Our Vibrant <strong class='text-primary'>Community</strong>" %}</h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text ">
+                                    {% blocktranslate %}
+                                        WhatsApp Partners is not just a platform; it's a vibrant community. We celebrate
+                                        diversity, creativity, and the entrepreneurial spirit. Joining us means becoming
+                                        a part of a global network of individuals who are transforming the way we think
+                                        about communication and income.
+                                    {% endblocktranslate %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6">
+                        <div class="card bg-transparent border-0">
+                            <img src="{% static "assets/img/community.jpg" %}" alt="our mission picture"
+                                 class="card-img"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

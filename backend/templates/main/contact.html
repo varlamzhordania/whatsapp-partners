@@ -1,0 +1,143 @@
+{% extends "main/index.html" %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+    <main>
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-6">
+                        <div class="card bg-transparent border-0">
+                            <img src="{% static "assets/img/support.jpg" %}" alt="about us picture" class="card-img"/>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6 d-flex align-items-center">
+                        <div class="card border-0 bg-transparent">
+                            <div class="card-header bg-transparent border-0">
+                                <h1 class="card-title fw-bold">{% trans "Contact <strong class='text-primary'> WhatsApp</strong> Partners" %}</h1>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text ">
+                                    {% blocktranslate %}
+                                        Have a question, suggestion, or just want to connect? We're here to help! Feel
+                                        free to reach out to us using the information below or by filling out the
+                                        contact form.
+                                    {% endblocktranslate %}
+                                </p>
+                                <h2 class="card-text fw-bolder">
+                                    {% trans "Get in Touch" %}
+                                </h2>
+                                <p class="card-text">
+                                    {% blocktranslate %}
+                                        <strong class="text-secondary fw-bolder">
+                                            General Inquiries:
+                                        </strong>
+                                        For general questions about WhatsApp Partners or to inquire about our services,
+                                        please
+                                        email us at
+                                        <span class="alert-link">info@whatsapppartners.com</span>
+                                    {% endblocktranslate %}
+                                </p>
+                                <p class="card-text">
+                                    {% blocktranslate %}
+                                        <strong class="text-secondary fw-bolder">
+                                            Customer Support:
+                                        </strong>
+                                        If you need assistance with your account, payments, or any technical support,
+                                        our
+                                        customer support team is ready to help. Contact them at
+                                        <span class="alert-link">support@whatsapppartners.com</span>
+                                    {% endblocktranslate %}
+                                </p>
+
+                                <p class="card-text">
+                                    {% blocktranslate %}
+                                        <strong class="text-secondary fw-bolder">
+                                            Business Inquiries:
+                                        </strong>
+                                        Interested in partnering with WhatsApp Partners or exploring business
+                                        opportunities?
+                                        Reach out to our business development team at
+                                        <span class="alert-link">partnerships@whatsapppartners.com</span>
+                                    {% endblocktranslate %}
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-6 d-flex align-items-center">
+                        <div class="card border-0 bg-transparent">
+                            <div class="card-header bg-transparent border-0">
+                                <h1 class="card-title fw-bold">{% trans "Connect on<strong class='text-primary'> Social </strong>Media" %}</h1>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text ">
+                                    {% blocktranslate %}
+                                        Stay updated and engaged by following us on social media:
+                                    {% endblocktranslate %}
+                                </p>
+                                <div class="d-flex flex-wrap gap-3 justify-content-start align-items-center">
+                                    {% if page_setting.facebook %}
+                                        <a href="#" class="link-dark"><i class="bi bi-facebook fs-4"></i></a>
+                                    {% endif %}
+                                    {% if page_setting.instagram %}
+                                        <a href="#" class="link-dark"><i class="bi bi-instagram fs-4"></i></a>
+                                    {% endif %}
+                                    {% if page_setting.x_twitter %}
+                                        <a href="#" class="link-dark"><i class="bi bi-twitter-x fs-4"></i></a>
+                                    {% endif %}
+                                    {% if page_setting.youtube %}
+                                        <a href="#" class="link-dark"><i class="bi bi-youtube fs-4"></i></a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6">
+                        <div class="card bg-transparent border-0">
+                            <img src="{% static "assets/img/social.jpg" %}" alt="social media picture"
+                                 class="card-img"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-6">
+                        <div class="card bg-transparent border-0">
+                            <img src="{% static "assets/img/address.jpg" %}" alt="address picture"
+                                 class="card-img"/>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6 d-flex align-items-center">
+                        <div class="card border-0 bg-transparent">
+                            <div class="card-header bg-transparent border-0">
+                                <h1 class="card-title fw-bold">{% trans "<strong class='text-primary'>Visit</strong> Us" %}</h1>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text ">
+                                    {% blocktranslate %}
+                                        If you prefer face-to-face interactions, you can visit our office at:
+                                    {% endblocktranslate %}
+                                </p>
+                                <p class="card-text">
+                                    {{ page_setting.address }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% include "main/join_us.html" %}
+
+    </main>
+{% endblock %}
