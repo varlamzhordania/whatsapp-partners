@@ -1,6 +1,9 @@
 {% load static %}
+{% load custom_tags %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANGUAGE %}
 <!DOCTYPE html>
-<html lang="en" style="overflow-x: hidden">
+<html lang="{{ CURRENT_LANGUAGE }}" style="overflow-x: hidden">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +15,7 @@
             <title>{{ seo.seo_title }}</title>
 
             <!-- SEO Description -->
-            <meta name="description" content="{{ seo.seo_description }}">
+            <meta name="description" content=" {{ seo.seo_description }}">
 
             <!-- Canonical URL -->
             <link rel="canonical" href="{{ seo.seo_canonical }}">
@@ -35,7 +38,7 @@
                 {{ seo.json_ld_data|safe }}
             </script>
         {% else %}
-            <title>{{ Title }}</title>
+            <title>{% trans Title %}</title>
         {% endif %}
 
     {% endwith %}

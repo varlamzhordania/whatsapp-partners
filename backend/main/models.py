@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
+from parler.models import TranslatableModel, TranslatedFields
 
 # Create your models here.
 PAGE_TYPE_CHOICES = (
@@ -24,7 +25,7 @@ class Page(models.Model):
         null=False,
         unique=True,
         help_text=_(
-            "format: create only 1 record with types , example only create 1 home page record rest wont be count except category"
+            "format: create only 1 record with types, example only create 1 home page record rest won't be count except category"
         )
     )
     create_at = models.DateTimeField(auto_now_add=True, verbose_name=_("Date Create"))
@@ -38,24 +39,26 @@ class Page(models.Model):
         return self.type
 
 
-class Seo(models.Model):
+class Seo(TranslatableModel):
     page = models.OneToOneField(
         Page, related_name="page_seo", blank=False, null=False,
         verbose_name=_("Belonging Page"), on_delete=models.CASCADE
     )
-    seo_title = models.CharField(
-        max_length=255, blank=False, null=False, verbose_name=_("Seo Title"),
-        help_text=_("For SEO purposes, ideally between 60-70 characters.")
-    )
-    seo_description = models.TextField(
-        max_length=160, blank=False, null=False, verbose_name=_("Seo Description"),
-        help_text=_("For SEO purposes, ideally between 150-160 characters.")
+    translations = TranslatedFields(
+        seo_title=models.CharField(
+            max_length=255, blank=False, null=False, verbose_name=_("Seo Title"),
+            help_text=_("For SEO purposes, ideally between 60-70 characters.")
+        ),
+        seo_description=models.TextField(
+            max_length=160, blank=False, null=False, verbose_name=_("Seo Description"),
+            help_text=_("For SEO purposes, ideally between 150-160 characters.")
+        ),
+        seo_keywords=models.TextField(
+            blank=False, null=False, verbose_name=_("Seo Keywords"),
+            help_text=_("Comma-separated list of keywords.")
+        ),
     )
     seo_canonical = models.URLField(blank=False, null=False, verbose_name=_("Seo Canonical"))
-    seo_keywords = models.TextField(
-        blank=False, null=False, verbose_name=_("Seo Keywords"),
-        help_text=_("Comma-separated list of keywords.")
-    )
     seo_is_robots_index = models.BooleanField(
         default=False, verbose_name=_("Seo Robot Index"),
         help_text=_("Set to allow search engines to index this page.")

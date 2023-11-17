@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     # 'mptt',
     'nested_admin',
     'rosetta',
+    'parler',
 ]
 
 MIDDLEWARE = [
@@ -121,11 +122,24 @@ USE_L10N = True
 USE_TZ = True
 
 LANGUAGES = (
-    ('fr', _('French')),
     ('en', _('English')),
+    ('fr', _('French')),
     ('es', _('Spanish')),
     ('ar', _('Arabic')),
 )
+
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en', },
+        {'code': 'fr', },
+        {'code': 'es', },
+        {'code': 'ar', },
+    ),
+    'default': {
+        'fallback': 'en',  # defaults to PARLER_DEFAULT_LANGUAGE_CODE
+        'hide_untranslated': False,  # the default; let .active_translations() return fallbacks too.
+    }
+}
 
 LOCALE_PATHS = [
     BASE_DIR / 'locale/',

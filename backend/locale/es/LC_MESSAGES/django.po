@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-15 17:47+0400\n"
+"POT-Creation-Date: 2023-11-17 23:28+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,170 +74,619 @@ msgstr ""
 msgid "Last IP Address"
 msgstr ""
 
-#: .\core\settings\settings.py:123
-msgid "French"
-msgstr ""
-
-#: .\core\settings\settings.py:124
+#: .\core\settings\settings.py:125
 msgid "English"
 msgstr ""
 
-#: .\core\settings\settings.py:125
+#: .\core\settings\settings.py:126
+msgid "French"
+msgstr ""
+
+#: .\core\settings\settings.py:127
 msgid "Spanish"
 msgstr ""
 
-#: .\core\settings\settings.py:126
+#: .\core\settings\settings.py:128
 msgid "Arabic"
 msgstr ""
 
-#: .\main\models.py:25
+#: .\main\models.py:28
 msgid ""
-"format: create only 1 record with types , example only create 1 home page "
-"record rest wont be count except category"
+"format: create only 1 record with types, example only create 1 home page "
+"record rest won't be count except category"
 msgstr ""
 
-#: .\main\models.py:28 .\main\models.py:92
+#: .\main\models.py:31 .\main\models.py:97
 msgid "Date Create"
 msgstr ""
 
-#: .\main\models.py:29 .\main\models.py:93
+#: .\main\models.py:32 .\main\models.py:98
 msgid "Date Modified"
 msgstr ""
 
-#: .\main\models.py:32
+#: .\main\models.py:35
 msgid "Page"
 msgstr ""
 
-#: .\main\models.py:33
+#: .\main\models.py:36
 msgid "Pages"
 msgstr ""
 
-#: .\main\models.py:42
+#: .\main\models.py:45
 msgid "Belonging Page"
 msgstr ""
 
-#: .\main\models.py:45
+#: .\main\models.py:49
 msgid "Seo Title"
 msgstr ""
 
-#: .\main\models.py:46
+#: .\main\models.py:50
 msgid "For SEO purposes, ideally between 60-70 characters."
 msgstr ""
 
-#: .\main\models.py:49
+#: .\main\models.py:53
 msgid "Seo Description"
 msgstr ""
 
-#: .\main\models.py:50
+#: .\main\models.py:54
 msgid "For SEO purposes, ideally between 150-160 characters."
 msgstr ""
 
-#: .\main\models.py:52
-msgid "Seo Canonical"
-msgstr ""
-
-#: .\main\models.py:54
+#: .\main\models.py:57
 msgid "Seo Keywords"
 msgstr ""
 
-#: .\main\models.py:55
+#: .\main\models.py:58
 msgid "Comma-separated list of keywords."
 msgstr ""
 
-#: .\main\models.py:58
-msgid "Seo Robot Index"
-msgstr ""
-
-#: .\main\models.py:59
-msgid "Set to allow search engines to index this page."
-msgstr ""
-
-#: .\main\models.py:62
-msgid "Seo Robot Follow"
+#: .\main\models.py:61
+msgid "Seo Canonical"
 msgstr ""
 
 #: .\main\models.py:63
+msgid "Seo Robot Index"
+msgstr ""
+
+#: .\main\models.py:64
+msgid "Set to allow search engines to index this page."
+msgstr ""
+
+#: .\main\models.py:67
+msgid "Seo Robot Follow"
+msgstr ""
+
+#: .\main\models.py:68
 msgid "Set to allow search engines to follow links on this page."
 msgstr ""
 
-#: .\main\models.py:71 .\main\models.py:72
+#: .\main\models.py:76 .\main\models.py:77
 msgid "SEO"
 msgstr ""
 
-#: .\main\models.py:83
+#: .\main\models.py:88
 msgid "Question"
 msgstr ""
 
-#: .\main\models.py:84
+#: .\main\models.py:89
 msgid "format: max-255 , required"
 msgstr ""
 
-#: .\main\models.py:87
+#: .\main\models.py:92
 msgid "Answer"
 msgstr ""
 
-#: .\main\models.py:89
+#: .\main\models.py:94
 msgid "format: required"
 msgstr ""
 
-#: .\main\models.py:91
+#: .\main\models.py:96
 msgid "Published"
 msgstr ""
 
-#: .\main\models.py:96 .\main\models.py:97
+#: .\main\models.py:101 .\main\models.py:102
 msgid "FAQ"
 msgstr ""
 
-#: .\main\models.py:106
+#: .\main\models.py:111
 msgid "Site Name"
 msgstr ""
 
-#: .\main\models.py:107
+#: .\main\models.py:112
 msgid "format:max-255, the name of website"
 msgstr ""
 
-#: .\main\models.py:114
+#: .\main\models.py:119
 msgid "Primary Logo"
 msgstr ""
 
-#: .\main\models.py:115 .\main\models.py:122
+#: .\main\models.py:120 .\main\models.py:127
 msgid "format: JPEG,JPG,PNG,SVG,WEBP"
 msgstr ""
 
-#: .\main\models.py:121
+#: .\main\models.py:126
 msgid "Secondary Logo"
 msgstr ""
 
-#: .\main\models.py:124
+#: .\main\models.py:129
+msgid "Physical Address"
+msgstr ""
+
+#: .\main\models.py:130
 msgid "Facebook"
 msgstr ""
 
-#: .\main\models.py:124 .\main\models.py:125 .\main\models.py:132
+#: .\main\models.py:130 .\main\models.py:131 .\main\models.py:138
 msgid "format: absolute URL"
 msgstr ""
 
-#: .\main\models.py:125
+#: .\main\models.py:131
 msgid "Instagram"
 msgstr ""
 
-#: .\main\models.py:127
+#: .\main\models.py:133
 msgid "X(Twitter)"
 msgstr ""
 
-#: .\main\models.py:128
+#: .\main\models.py:134
 msgid "format: absolute URL,"
 msgstr ""
 
-#: .\main\models.py:132
+#: .\main\models.py:138
 msgid "Youtube"
 msgstr ""
 
-#: .\main\models.py:134
+#: .\main\models.py:140
 msgid "Api Token"
 msgstr ""
 
-#: .\main\models.py:135
+#: .\main\models.py:141
 msgid "format: used in post request to create campaign"
+msgstr ""
+
+#: .\templates\main\about.html:17
+msgid "<strong class='text-primary'>WhatsApp</strong> Partners"
+msgstr ""
+
+#: .\templates\main\about.html:21
+msgid ""
+"\n"
+"                                        Welcome to WhatsApp Partners, where "
+"innovation meets opportunity. We are a\n"
+"                                        community\n"
+"                                        of\n"
+"                                        visionaries, leveraging the power of "
+"unused WhatsApp accounts to create a\n"
+"                                        network of\n"
+"                                        partners earning together. Our "
+"platform is designed to simplify the process,\n"
+"                                        turning\n"
+"                                        your dormant accounts into valuable "
+"assets that contribute to a connected,\n"
+"                                        collaborative\n"
+"                                        world.\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\about.html:46
+msgid "Our <strong class='text-primary'>Mission</strong>"
+msgstr ""
+
+#: .\templates\main\about.html:50
+msgid ""
+"\n"
+"                                        At WhatsApp Partners, our mission is "
+"clear: to empower individuals globally by\n"
+"                                        unlocking the potential within their "
+"unused WhatsApp accounts. We're committed\n"
+"                                        to\n"
+"                                        providing a platform that transcends "
+"traditional communication, fostering an\n"
+"                                        environment where our partners not "
+"only connect but also earn seamlessly.\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\about.html:82
+msgid "What Sets <strong class='text-primary'>WhatsApp </strong>Partners Apart"
+msgstr ""
+
+#: .\templates\main\about.html:86
+msgid ""
+"\n"
+"                                        <strong class=\"fw-bolder fs-5 text-"
+"secondary \">Innovation in\n"
+"                                            Connectivity:</strong>\n"
+"                                        We\n"
+"                                        pride ourselves on being at the "
+"forefront of\n"
+"                                        innovation. Our platform is built on "
+"cutting-edge technology, ensuring a\n"
+"                                        seamless experience from the initial "
+"setup to ongoing earnings. WhatsApp\n"
+"                                        Partners is where innovation meets "
+"practicality.\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\about.html:97
+msgid ""
+"\n"
+"                                        <strong class=\"fw-bolder fs-5 text-"
+"secondary \">Effortless Passive\n"
+"                                            Earning:</strong>\n"
+"                                        We understand the importance of "
+"simplicity and\n"
+"                                        efficiency. Our system is crafted to "
+"enable passive earning with minimal daily\n"
+"                                        effort. Your unused WhatsApp "
+"accounts become a reliable source of income,\n"
+"                                        effortlessly.\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\about.html:107
+msgid ""
+"\n"
+"                                        <strong class=\"fw-bolder fs-5 text-"
+"secondary \">Scalable Opportunities:</strong>\n"
+"                                        Whether you're managing a few "
+"accounts or aiming for 60,\n"
+"                                        WhatsApp Partners provides the tools "
+"and support you need. As you expand your\n"
+"                                        network, your potential earnings "
+"grow. We believe in the scalability of success.\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\about.html:127
+msgid "Join Our Vibrant <strong class='text-primary'>Community</strong>"
+msgstr ""
+
+#: .\templates\main\about.html:131
+msgid ""
+"\n"
+"                                        WhatsApp Partners is not just a "
+"platform; it's a vibrant community. We celebrate\n"
+"                                        diversity, creativity, and the "
+"entrepreneurial spirit. Joining us means becoming\n"
+"                                        a part of a global network of "
+"individuals who are transforming the way we think\n"
+"                                        about communication and income.\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\contact.html:17
+msgid "Contact <strong class='text-primary'> WhatsApp</strong> Partners"
+msgstr ""
+
+#: .\templates\main\contact.html:21
+msgid ""
+"\n"
+"                                        Have a question, suggestion, or just "
+"want to connect? We're here to help! Feel\n"
+"                                        free to reach out to us using the "
+"information below or by filling out the\n"
+"                                        contact form.\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\contact.html:28
+msgid "Get in Touch"
+msgstr ""
+
+#: .\templates\main\contact.html:31
+msgid ""
+"\n"
+"                                        <strong class=\"text-secondary fw-"
+"bolder\">\n"
+"                                            General Inquiries:\n"
+"                                        </strong>\n"
+"                                        For general questions about WhatsApp "
+"Partners or to inquire about our services,\n"
+"                                        please\n"
+"                                        email us at\n"
+"                                        <span class=\"alert-link"
+"\">info@whatsapppartners.com</span>\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\contact.html:42
+msgid ""
+"\n"
+"                                        <strong class=\"text-secondary fw-"
+"bolder\">\n"
+"                                            Customer Support:\n"
+"                                        </strong>\n"
+"                                        If you need assistance with your "
+"account, payments, or any technical support,\n"
+"                                        our\n"
+"                                        customer support team is ready to "
+"help. Contact them at\n"
+"                                        <span class=\"alert-link"
+"\">support@whatsapppartners.com</span>\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\contact.html:54
+msgid ""
+"\n"
+"                                        <strong class=\"text-secondary fw-"
+"bolder\">\n"
+"                                            Business Inquiries:\n"
+"                                        </strong>\n"
+"                                        Interested in partnering with "
+"WhatsApp Partners or exploring business\n"
+"                                        opportunities?\n"
+"                                        Reach out to our business "
+"development team at\n"
+"                                        <span class=\"alert-link"
+"\">partnerships@whatsapppartners.com</span>\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\contact.html:77
+msgid "Connect on<strong class='text-primary'> Social </strong>Media"
+msgstr ""
+
+#: .\templates\main\contact.html:81
+msgid ""
+"\n"
+"                                        Stay updated and engaged by "
+"following us on social media:\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\contact.html:123
+msgid "<strong class='text-primary'>Visit</strong> Us"
+msgstr ""
+
+#: .\templates\main\contact.html:127
+msgid ""
+"\n"
+"                                        If you prefer face-to-face "
+"interactions, you can visit our office at:\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\header.html:87 .\templates\main\header.html:190
+#: .\templates\main\home.html:271
+msgid "SignIn"
+msgstr ""
+
+#: .\templates\main\header.html:89 .\templates\main\header.html:192
+msgid "SignUp"
+msgstr ""
+
+#: .\templates\main\header.html:98
+msgid "Home"
+msgstr ""
+
+#: .\templates\main\header.html:104
+msgid "My WhatsApp"
+msgstr ""
+
+#: .\templates\main\header.html:111
+msgid "Payments"
+msgstr ""
+
+#: .\templates\main\header.html:118
+msgid "About US"
+msgstr ""
+
+#: .\templates\main\header.html:125
+msgid "Contact us"
+msgstr ""
+
+#: .\templates\main\home.html:12
+msgid ""
+"Unlock the Earning Potential of Your Dormant <strong class='text-primary'> "
+"WhatsApp </strong> Accounts"
+msgstr ""
+
+#: .\templates\main\home.html:13
+msgid ""
+"Join Our Global Network, Earn up to $2000 Monthly – No Investment Needed!"
+msgstr ""
+
+#: .\templates\main\home.html:17
+msgid ""
+"\n"
+"                                        Do you have old, unused WhatsApp "
+"accounts? Or the capability to manage multiple\n"
+"                                        accounts? Convert these resources "
+"into a steady income stream with our\n"
+"                                        cutting-edge\n"
+"                                        communication technology. Designed "
+"with a focus on the ambitious,\n"
+"                                        entrepreneurial\n"
+"                                        spirits of developing countries, our "
+"partnership program enables you to gain\n"
+"                                        additional income effortlessly.\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\home.html:29 .\templates\main\join_us.html:16
+msgid "Become a Partner"
+msgstr ""
+
+#: .\templates\main\home.html:32
+msgid "Learn more"
+msgstr ""
+
+#: .\templates\main\home.html:53
+msgid "Effortless Setup"
+msgstr ""
+
+#: .\templates\main\home.html:58
+msgid ""
+"\n"
+"                                        Embark on your journey with just "
+"three unused WhatsApp accounts and a stable\n"
+"                                        internet connection. Our step-by-"
+"step guide ensures a seamless setup process.\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\home.html:70
+msgid "Passive Earning Made Simple"
+msgstr ""
+
+#: .\templates\main\home.html:75
+msgid ""
+"\n"
+"                                        Integrate your WhatsApp accounts "
+"into our expansive conference system and start\n"
+"                                        earning with minimal daily effort. "
+"Your unused accounts become a consistent\n"
+"                                        source of income effortlessly.\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\home.html:88
+msgid "Scalable Opportunity Awaits"
+msgstr ""
+
+#: .\templates\main\home.html:93
+msgid ""
+"\n"
+"                                        Unlock the potential of your "
+"earnings by effortlessly managing up to 60 WhatsApp\n"
+"                                        accounts all under one roof. Watch "
+"your profit scale as you expand your network.\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\home.html:115
+msgid "Why Be a <strong class='text-primary'>Partner?</strong>"
+msgstr ""
+
+#: .\templates\main\home.html:116
+msgid "Explore Unlimited Earning Potential"
+msgstr ""
+
+#: .\templates\main\home.html:120
+msgid ""
+"\n"
+"                                        Discover the exciting potential of "
+"your unused WhatsApp account. Be a partner\n"
+"                                        with WhatsApp Partners and tap into "
+"a world of opportunities to earn while\n"
+"                                        contributing to a global "
+"communication network.\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\home.html:129
+msgid "Flexible Work"
+msgstr ""
+
+#: .\templates\main\home.html:133
+msgid "Generous Rewards"
+msgstr ""
+
+#: .\templates\main\home.html:137
+msgid ""
+"\n"
+"                                        Enjoy the flexibility of working on "
+"your terms. Our partnership program is\n"
+"                                        designed to provide you with "
+"generous rewards for every conference session\n"
+"                                        conducted through your WhatsApp "
+"account.\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\home.html:155
+msgid "How It <strong class='text-primary'>Works</strong>"
+msgstr ""
+
+#: .\templates\main\home.html:163
+msgid "Register"
+msgstr ""
+
+#: .\templates\main\home.html:168
+msgid ""
+"\n"
+"                                                        Joining WhatsApp "
+"Partners is easy. Simply register your\n"
+"                                                        WhatsApp account,\n"
+"                                                        providing accurate "
+"information to ensure seamless transactions.\n"
+"                                                    "
+msgstr ""
+
+#: .\templates\main\home.html:181
+msgid "Earning"
+msgstr ""
+
+#: .\templates\main\home.html:186
+msgid ""
+"\n"
+"                                                        Learn how your "
+"WhatsApp account can become a revenue-generating\n"
+"                                                        asset.\n"
+"                                                        We'll\n"
+"                                                        guide you through "
+"the process of earning with each successful\n"
+"                                                        conference\n"
+"                                                        session.\n"
+"                                                    "
+msgstr ""
+
+#: .\templates\main\home.html:202
+msgid "Payment"
+msgstr ""
+
+#: .\templates\main\home.html:207
+msgid ""
+"\n"
+"                                                        JUnderstand our "
+"transparent payment process. Learn how we value\n"
+"                                                        your\n"
+"                                                        contribution and "
+"ensure timely and hassle-free payments.\n"
+"                                                    "
+msgstr ""
+
+#: .\templates\main\home.html:240
+msgid "Questions or Concerns?"
+msgstr ""
+
+#: .\templates\main\home.html:244
+msgid ""
+"\n"
+"                                        We're here to assist you every step "
+"of the way. Contact WhatsApp Partners for\n"
+"                                        any inquiries or support you may "
+"need.\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\home.html:261
+msgid "Already a <strong class='text-primary'>Partner?</strong>"
+msgstr ""
+
+#: .\templates\main\home.html:265
+msgid ""
+"\n"
+"                                        Log in to your WhatsApp Partners "
+"account to track your communication statistics\n"
+"                                        and earnings.\n"
+"                                    "
+msgstr ""
+
+#: .\templates\main\join_us.html:6
+msgid "Join WhatsApp Partners"
+msgstr ""
+
+#: .\templates\main\join_us.html:10
+msgid ""
+"\n"
+"                        Ready to transform your WhatsApp account into a "
+"valuable asset? Register now to become a\n"
+"                        partner and start earning!\n"
+"                    "
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:15

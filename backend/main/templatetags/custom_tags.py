@@ -1,5 +1,6 @@
 from django import template
 from django.contrib.auth.models import Group
+from django.utils.translation import gettext_lazy as _
 
 register = template.Library()
 
@@ -17,3 +18,8 @@ def has_group(user, group_name):
 @register.filter("split")
 def split(value, delimiter):
     return value.split(delimiter)
+
+
+@register.filter("translate")
+def translate(value):
+    return _(value)
