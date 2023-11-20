@@ -98,16 +98,16 @@
                                href="{{ home }}">{% trans "Home" %}</a>
                         </li>
                         <li class="nav-item px-3 px-lg-0">
-                            <a class="nav-link {% if request.path == about %}active{% endif %}"
-                               {% if request.path == about %}aria-current="page"{% endif %}
-                               href="{{ about }}">
+                            <a class="nav-link {% if request.path == home %}active{% endif %}"
+                               {% if request.path == home %}aria-current="page"{% endif %}
+                               href="{{ home }}">
                                 {% trans "My WhatsApp" %}
                             </a>
                         </li>
                         <li class="nav-item px-3 px-lg-0">
-                            <a class="nav-link {% if request.path == about %}active{% endif %}"
-                               {% if request.path == about %}aria-current="page"{% endif %}
-                               href="{{ about }}">
+                            <a class="nav-link {% if request.path == home %}active{% endif %}"
+                               {% if request.path == home %}aria-current="page"{% endif %}
+                               href="{{ home }}">
                                 {% trans "Payments" %}
                             </a>
                         </li>
@@ -169,13 +169,13 @@
                                 <i class="bi bi-person-fill"></i>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end border-0 shadow">
-                                {#                                <li>#}
-                                {#                                    <a class="dropdown-item d-flex justify-content-start align-items-center gap-3"#}
-                                {#                                       href="{% url "account:profile" %}">#}
-                                {#                                        <i class="bi bi-person"></i>#}
-                                {#                                        <strong>Profile</strong>#}
-                                {#                                    </a>#}
-                                {#                                </li>#}
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-start align-items-center gap-3"
+                                       href="{% url "account:profile" %}">
+                                        <i class="bi bi-person"></i>
+                                        <strong>Profile</strong>
+                                    </a>
+                                </li>
                                 <li>
                                     <a class="dropdown-item d-flex justify-content-start align-items-center gap-3"
                                        href="{% url "account:logout" %}">

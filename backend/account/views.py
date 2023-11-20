@@ -9,23 +9,22 @@ from .decorators import unauthenticated_user
 from main.models import Page
 
 
-# Create your views here.
-# @login_required(login_url="/login")
-# def Profile(request, *args, **kwargs):
-#     user = request.user
-#     if request.method == "POST":
-#         form = StylesCustomUserChangeForm(request.POST, instance=user)
-#         if form.is_valid():
-#             form.save()
-#             fancy_message(request, f"Profile updated successfully")
-#             return redirect("account:profile")
-#         else:
-#             fancy_message(request, form.errors, level="error")
-#             return redirect(request.META["HTTP_REFERER"])
-#     form = StylesCustomUserChangeForm(instance=user)
-#     password_form = StylesCustomPasswordChangeForm(user)
-#     my_context = {"Title": f"Profile | {request.user}", "form": form, "password_form": password_form}
-#     return render(request, "dashboard/profile.html", my_context)
+@login_required(login_url="/login")
+def Profile(request, *args, **kwargs):
+    user = request.user
+    if request.method == "POST":
+        form = StylesCustomUserChangeForm(request.POST, instance=user)
+        if form.is_valid():
+            form.save()
+            fancy_message(request, f"Profile updated successfully")
+            return redirect("account:profile")
+        else:
+            fancy_message(request, form.errors, level="error")
+            return redirect(request.META["HTTP_REFERER"])
+    form = StylesCustomUserChangeForm(instance=user)
+    password_form = StylesCustomPasswordChangeForm(user)
+    my_context = {"Title": f"Profile | {request.user}", "form": form, "password_form": password_form}
+    return render(request, "profile.html", my_context)
 
 
 @login_required(login_url="/login")
