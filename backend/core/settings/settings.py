@@ -60,6 +60,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'main.middleware.GeolocationMiddleware',
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -193,3 +194,5 @@ LOGGING = {
     },
 }
 STATIC_VERSION = "1"
+
+IP_INFO_TOKEN = os.getenv("IP_INFO_TOKEN")
