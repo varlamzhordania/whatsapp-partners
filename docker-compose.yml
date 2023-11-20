@@ -1,6 +1,6 @@
 version: '2.4'
 services:
-  django:
+  django-partners:
     restart: always
     container_name: django
     build:
@@ -17,7 +17,7 @@ services:
       - redis
     env_file:
       - ./backend/.env
-  nginx:
+  nginx-partners:
     restart: always
     container_name: nginx
     image: nginx:latest
@@ -32,7 +32,7 @@ services:
       - ./backend/staticfiles/:/home/whatsapp/backend/staticfiles
     depends_on:
       - django
-  postgres:
+  postgres-partners:
     image: postgres:latest
     container_name: postgres
     restart: always
@@ -46,7 +46,7 @@ services:
       - POSTGRES_PASSWORD=${DB_PASSWORD:-aD5%w12Gx_&8}
     volumes:
       - ./pg/:/var/lib/postgresql/data
-  redis:
+  redis-partners:
     container_name: redis
     restart: always
     image: redis
