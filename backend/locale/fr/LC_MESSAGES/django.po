@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-17 23:28+0400\n"
-"PO-Revision-Date: 2023-11-20 20:30+0000\n"
+"PO-Revision-Date: 2023-11-20 23:09+0000\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -495,7 +495,7 @@ msgstr ""
 
 #: .\templates\main\home.html:70
 msgid "Passive Earning Made Simple"
-msgstr ""
+msgstr "Les gains passifs simplifiés"
 
 #: .\templates\main\home.html:75
 msgid ""

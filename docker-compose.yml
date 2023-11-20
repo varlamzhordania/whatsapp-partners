@@ -11,7 +11,7 @@ services:
     command: >
       bash -c "python manage.py makemigrations && python manage.py migrate && gunicorn -c conf/gunicorn_conf.py core.wsgi:application"
     expose:
-      - '8000'
+      - '8001:8000'
     depends_on:
       - postgres
       - redis
@@ -22,8 +22,8 @@ services:
     container_name: nginx
     image: nginx:latest
     ports:
-      - '80:80'
-      - '443:443'
+      - '81:80'
+      - '444:443'
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./cert/:/home/whatsapp
@@ -37,7 +37,7 @@ services:
     container_name: postgres
     restart: always
     ports:
-      - '5432:5432'
+      - '5433:5432'
     env_file:
       - ./backend/.env
     environment:
@@ -51,4 +51,4 @@ services:
     restart: always
     image: redis
     ports:
-      - '6379:6379'
+      - '6380:6379'
