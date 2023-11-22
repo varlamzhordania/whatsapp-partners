@@ -2,6 +2,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .models import FAQ, Page
 from core.utils import fancy_message
 from django.core.cache import cache
+from .forms import ContactUsForm
+from django.utils.translation import gettext as _
 
 
 def home(request, *args, **kwargs):
@@ -37,6 +39,19 @@ def about(request, *args, **kwargs):
 
 
 def contact(request, *args, **kwargs):
+    if request.method == "POST":
+        form = ContactUsForm(data=request.POST)
+        if form.is_valid():
+            form.save()
+            fancy_message(
+                request,
+                _("Our support will review and answer you as soon as possible"),
+                level="success"
+            )
+            return redirect("main:contact")
+        else:
+            fancy_message(request, form.errors, level="error")
+
     page_data = cache.get("contact_page")
 
     if page_data is not None:
@@ -45,8 +60,11 @@ def contact(request, *args, **kwargs):
         page = Page.objects.filter(type="contact").first()
         cache.set('contact_page', page, 900)
 
+    form = ContactUsForm(request.POST)
+
     my_context = {
         "Title": "Contact US",
-        "page": page
+        "page": page,
+        "form": form
     }
     return render(request, "main/contact.html", my_context)

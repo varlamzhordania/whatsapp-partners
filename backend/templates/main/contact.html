@@ -138,6 +138,41 @@
             </div>
         </section>
         {% include "main/join_us.html" %}
-
+        <section class="my-5">
+            <div class="container">
+                <form action="." method="post" enctype="multipart/form-data">
+                    <div class="card bg-transparent shadow-lg border-0">
+                        <div class="card-body">
+                            {% csrf_token %}
+                            <div class="row row-gap-3">
+                                <div class="col col-12">
+                                    <label for="{{ form.name.name }}" class="form-label">
+                                        {{ form.name.label }}
+                                    </label>
+                                    {{ form.name }}
+                                </div>
+                                <div class="col col-12">
+                                    <label for="{{ form.email.name }}" class="form-label">
+                                        {{ form.email.label }}
+                                    </label>
+                                    {{ form.email }}
+                                </div>
+                                <div class="col col-12">
+                                    <label for="{{ form.message.name }}" class="form-label">
+                                        {{ form.message.label }}
+                                    </label>
+                                    {{ form.message }}
+                                </div>
+                                <div class="col col-12">
+                                    <button class="btn btn-secondary float-end" type="submit">
+                                        Submit
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 {% endblock %}
