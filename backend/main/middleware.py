@@ -14,12 +14,17 @@ class GeolocationMiddleware:
         self.get_response = get_response
 
     def __call__(self, request):
-        user_ip = self.get_client_ip(request)
-        user_location = self.get_user_location(user_ip)
+        # Check if a language is explicitly set in the URL
+        language_from_url = self.get_language_from_url(request)
+        if language_from_url:
+            request.session['django_language'] = language_from_url
+        else:
+            user_ip = self.get_client_ip(request)
+            user_location = self.get_user_location(user_ip)
 
-        # Determine language based on location
-        language_for_location = self.get_language_for_location(user_location)
-        request.session['django_language'] = language_for_location
+            # Determine language based on location
+            language_for_location = self.get_language_for_location(user_location)
+            request.session['django_language'] = language_for_location
 
         response = self.get_response(request)
         return response
@@ -67,3 +72,10 @@ class GeolocationMiddleware:
                 return language
 
         return 'en'  # Default to English if no matching language group is found
+
+    def get_language_from_url(self, request):
+        # Extract language from the URL, if present
+        language_from_url = request.path_info.split('/')[1]
+        if language_from_url in dict(settings.LANGUAGES).keys():
+            return language_from_url
+        return None

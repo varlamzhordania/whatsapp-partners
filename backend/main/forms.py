@@ -11,16 +11,16 @@ class PageAdminForm(forms.ModelForm):
 
 class ContactUsForm(forms.ModelForm):
     name = forms.CharField(
-        required=True, label="Your Name", widget=forms.TextInput(
+        required=True, label=_("Your Name"), widget=forms.TextInput(
             attrs={
                 "class": "form-control border-dark border-opacity-25",
                 "id": "name",
-                "placeholder": "enter your name"
+                "placeholder": _("enter your name")
             }
         )
     )
     email = forms.CharField(
-        required=True, label="Email", widget=forms.EmailInput(
+        required=True, label=_("Email"), widget=forms.EmailInput(
             attrs={
                 "class": "form-control border-dark border-opacity-25",
                 "id": "email",
@@ -29,11 +29,11 @@ class ContactUsForm(forms.ModelForm):
         )
     )
     message = forms.CharField(
-        required=True, label="Message", max_length=600, widget=forms.Textarea(
+        required=True, label=_("Message"), max_length=600, widget=forms.Textarea(
             attrs={
                 "class": "form-control border-dark border-opacity-25",
                 "id": "message",
-                "placeholder": "enter your message..."
+                "placeholder": _("enter your message...")
             }
         )
     )

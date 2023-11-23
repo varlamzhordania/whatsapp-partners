@@ -1,5 +1,6 @@
 {% extends 'index.html' %}
 {% load static %}
+{% load i18n %}
 {% block content %}
     <main class="vh-100">
         <div class="row h-100">
@@ -21,49 +22,49 @@
                             </div>
                             <div class="position-relative w-100 mt-5">
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
+                                    <label for="email" class="form-label">{% trans 'Email' %}</label>
                                     <input type="email"
                                            class="form-control border-always outline-0 shadow-0 lh-lg"
                                            name="email"
                                            id="email"
-                                           placeholder="Your email here"
+                                           placeholder="{% trans 'Your email here' %}"
                                            required
                                     >
                                     <div class="invalid-feedback">
-                                        Not valid email format
+                                        {% trans "Not valid email format" %}
                                     </div>
                                 </div>
                             </div>
                             <div class="position-relative w-100">
                                 <div class="mb-3">
-                                    <label for="password" class="form-label">Password</label>
+                                    <label for="password" class="form-label">{% trans 'Password' %}</label>
                                     <div class="position-relative">
                                         <input type="password"
                                                class="password form-control border-always outline-0 shadow-0 lh-lg"
                                                name="password"
                                                id="password"
                                                minlength="8"
-                                               placeholder="****" required>
+                                               placeholder="********" required>
                                         <div class="invalid-feedback">
-                                            password must be at least 8 characters
+                                            {% trans 'password must be at least 8 characters' %}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <button class="btn btn-primary w-100 text-white fw-bold px-5 py-1 rounded mt-3"
                                     type="submit">
-                                Login
+                                {% trans 'Sign In' %}
                             </button>
                             <p class="py-2 pb-0 fs-6 text-center">
-                                Forgot Password
+                                {% trans 'Forgot Password' %}
                                 <a href="{% url "reset_password" %}" class="text-uppercase text-danger fw-bold">
-                                    reset
+                                    {% trans 'reset' %}
                                 </a>
                             </p>
                             <div class="d-flex justify-content-between align-items-center gap-2 w-100">
                                 <a class="btn btn-outline-warning outline-warning border-2 w-100 fw-bold"
                                    href="{% url "account:register" %}">
-                                    Register
+                                    {% trans 'Sign Up' %}
                                 </a>
                             </div>
                         </form>

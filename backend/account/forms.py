@@ -17,7 +17,7 @@ class StylesCustomSetPasswordForm(SetPasswordForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "new_password1",
                 "id": "new_password1",
-                "placeholder": "New password",
+                "placeholder": _("New password"),
             }
         ),
         strip=False,
@@ -31,7 +31,7 @@ class StylesCustomSetPasswordForm(SetPasswordForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "new_password2",
                 "id": "new_password2",
-                "placeholder": "Confirm your new password",
+                "placeholder": _("Confirm your new password"),
             }
         ),
     )
@@ -47,7 +47,7 @@ class StylesCustomPasswordResetForm(PasswordResetForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "email",
                 "id": "email",
-                "placeholder": "Email",
+                "placeholder": _("Email"),
             }
         ),
     )
@@ -65,7 +65,7 @@ class StylesCustomPasswordChangeForm(PasswordChangeForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "old_password",
                 "id": "old_password",
-                "placeholder": "Your old password",
+                "placeholder": _("Your old password"),
             }
         ),
     )
@@ -77,7 +77,7 @@ class StylesCustomPasswordChangeForm(PasswordChangeForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "new_password1",
                 "id": "new_password1",
-                "placeholder": "New password",
+                "placeholder": _("New password"),
             }
         ),
     )
@@ -90,7 +90,7 @@ class StylesCustomPasswordChangeForm(PasswordChangeForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "new_password2",
                 "id": "new_password2",
-                "placeholder": "Confirm your new password",
+                "placeholder": _("Confirm your new password"),
             }
         ),
     )
@@ -107,7 +107,7 @@ class StylesCustomUserChangeForm(UserChangeForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "first_name",
                 "id": "first_name",
-                "placeholder": "First Name",
+                "placeholder": _("First Name"),
             }
         )
     )
@@ -117,7 +117,7 @@ class StylesCustomUserChangeForm(UserChangeForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "middle_name",
                 "id": "middle_name",
-                "placeholder": "Middle Name",
+                "placeholder": _("Middle Name"),
             }
         )
     )
@@ -138,7 +138,7 @@ class StylesCustomUserChangeForm(UserChangeForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "email",
                 "id": "email",
-                "placeholder": "Email",
+                "placeholder": _("Email"),
             }
         )
     )
@@ -149,7 +149,7 @@ class StylesCustomUserChangeForm(UserChangeForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "phone_number",
                 "id": "phone_number",
-                "placeholder": "Phone Number",
+                "placeholder": _("Phone Number"),
             }
         )
     )
@@ -166,7 +166,7 @@ class StylesCustomUserCreationForm(UserCreationForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "first_name",
                 "id": "first_name",
-                "placeholder": "First Name",
+                "placeholder": _("First Name"),
             }
         )
     )
@@ -176,7 +176,7 @@ class StylesCustomUserCreationForm(UserCreationForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "middle_name",
                 "id": "middle_name",
-                "placeholder": "Middle Name",
+                "placeholder": _("Middle Name"),
             }
         )
     )
@@ -186,7 +186,7 @@ class StylesCustomUserCreationForm(UserCreationForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "last_name",
                 "id": "last_name",
-                "placeholder": "Last Name",
+                "placeholder": _("Last Name"),
             }
         )
     )
@@ -197,7 +197,7 @@ class StylesCustomUserCreationForm(UserCreationForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "email",
                 "id": "email",
-                "placeholder": "Email",
+                "placeholder": _("Email"),
             }
         )
     )
@@ -208,7 +208,7 @@ class StylesCustomUserCreationForm(UserCreationForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "username",
                 "id": "username",
-                "placeholder": "Username",
+                "placeholder": _("Username"),
             }
         )
     )
@@ -218,7 +218,7 @@ class StylesCustomUserCreationForm(UserCreationForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "password1",
                 "id": "password1",
-                "placeholder": "****",
+                "placeholder": "********",
             }
         )
     )
@@ -228,7 +228,7 @@ class StylesCustomUserCreationForm(UserCreationForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "password2",
                 "id": "password2",
-                "placeholder": "****",
+                "placeholder": "********",
             }
         )
     )
@@ -239,7 +239,7 @@ class StylesCustomUserCreationForm(UserCreationForm):
                 "class": "form-control border-always outline-0 shadow-0 lh-lg",
                 "name": "phone_number",
                 "id": "phone_number",
-                "placeholder": "+1XXXXXXXXXX",
+                "placeholder": "+RRXXXXXXXXXX",
             }
         )
     )

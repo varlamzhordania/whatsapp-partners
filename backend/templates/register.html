@@ -1,5 +1,6 @@
 {% extends 'index.html' %}
 {% load static %}
+{% load i18n %}
 {% block content %}
     <main class="vh-100">
         <div class="row h-100">
@@ -27,7 +28,7 @@
                                                class="form-label">{{ form.first_name.label }}</label>
                                         {{ form.first_name }}
                                         <div class="invalid-feedback">
-                                            first name is a required field
+                                            {% trans 'first name is a required field' %}
                                         </div>
                                     </div>
                                 </div>
@@ -44,7 +45,7 @@
                                                class="form-label">{{ form.last_name.label }}</label>
                                         {{ form.last_name }}
                                         <div class="invalid-feedback">
-                                            last name is a required field
+                                            {% trans 'last name is a required field' %}
                                         </div>
                                     </div>
                                 </div>
@@ -56,7 +57,7 @@
                                                class="form-label">{{ form.email.label }}</label>
                                         {{ form.email }}
                                         <div class="invalid-feedback">
-                                            Email is required!
+                                            {% trans 'Email is required!' %}
                                         </div>
                                     </div>
                                 </div>
@@ -66,7 +67,7 @@
                                                class="form-label">{{ form.username.label }}</label>
                                         {{ form.username }}
                                         <div class="invalid-feedback">
-                                            Username most be at least 8 character
+                                            {% trans 'Username most be at least 8 character' %}
                                         </div>
                                     </div>
                                 </div>
@@ -78,7 +79,7 @@
                                                class="form-label">{{ form.phone_number.label }}</label>
                                         {{ form.phone_number }}
                                         <div class="invalid-feedback">
-                                            Phone number is required in +RRXXXXXXXXXX pattern
+                                            {% trans 'Phone number is required in +RRXXXXXXXXXX pattern' %}
                                         </div>
                                     </div>
                                 </div>
@@ -91,7 +92,7 @@
                                         <div class="position-relative">
                                             {{ form.password1 }}
                                             <div class="invalid-feedback">
-                                                password must be at least 8 characters
+                                                {% trans 'password must be at least 8 characters' %}
                                             </div>
                                         </div>
                                     </div>
@@ -103,7 +104,7 @@
                                         <div class="position-relative">
                                             {{ form.password2 }}
                                             <div class="invalid-feedback">
-                                                password2 is a required field
+                                                {% trans 'password2 is a required field' %}
                                             </div>
                                         </div>
                                     </div>
@@ -112,12 +113,12 @@
                             <button class="btn btn-primary w-100 text-white fw-bold px-5 py-1 rounded mt-3"
                                     type="submit"
                                     role="button">
-                                Register
+                                {% trans 'Sign Up' %}
                             </button>
                             <p class="py-2 pb-0 fs-6 text-center">
-                                Have an account
+                                {% trans 'Have an account' %}
                                 <a href="{% url "account:login" %}" class="text-uppercase text-danger fw-bold">
-                                    login
+                                    {% trans 'Sign In' %}
                                 </a>
                             </p>
                         </form>

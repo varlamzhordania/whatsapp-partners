@@ -7,6 +7,7 @@ from django.contrib.auth import login, logout, authenticate, update_session_auth
 from django.contrib.auth.decorators import login_required
 from .decorators import unauthenticated_user
 from main.models import Page
+from django.utils.translation import gettext as _
 
 
 @login_required(login_url="/login")
@@ -16,14 +17,14 @@ def Profile(request, *args, **kwargs):
         form = StylesCustomUserChangeForm(request.POST, instance=user)
         if form.is_valid():
             form.save()
-            fancy_message(request, f"Profile updated successfully")
+            fancy_message(request, _(f"Profile updated successfully"))
             return redirect("account:profile")
         else:
             fancy_message(request, form.errors, level="error")
             return redirect(request.META["HTTP_REFERER"])
     form = StylesCustomUserChangeForm(instance=user)
     password_form = StylesCustomPasswordChangeForm(user)
-    my_context = {"Title": f"Profile | {request.user}", "form": form, "password_form": password_form}
+    my_context = {"Title": _(f"Profile | {request.user}"), "form": form, "password_form": password_form}
     return render(request, "profile.html", my_context)
 
 
@@ -34,7 +35,7 @@ def ChangePassword(request, *args, **kwargs):
         if form.is_valid():
             user = form.save()
             update_session_auth_hash(request, user)
-            fancy_message(request, f"Your password was successfully updated!")
+            fancy_message(request, _(f"Your password was successfully updated!"))
             return redirect("account:profile")
         else:
             fancy_message(request, form.errors, level="error")
@@ -54,14 +55,14 @@ def Login(request, *args, **kwargs):
                 fancy_message(request, f"welcome {user.username}")
                 return redirect("main:home")
             else:
-                fancy_message(request, "Email or Password is incorrect", level="error")
+                fancy_message(request, _("Email or Password is incorrect"), level="error")
                 return redirect(request.META["HTTP_REFERER"])
         else:
-            fancy_message(request, "Email and Password is required", level="error")
+            fancy_message(request, _("Email and Password is required"), level="error")
             return redirect(request.META["HTTP_REFERER"])
     page = Page.objects.filter(type="signIn").first()
     my_context = {
-        "Title": "Login",
+        "Title": _("SignIn"),
         "page": page,
     }
     return render(request, "login.html", my_context)
@@ -70,7 +71,7 @@ def Login(request, *args, **kwargs):
 @login_required(login_url="/login")
 def Logout(request, *args, **kwargs):
     logout(request)
-    fancy_message(request, "Logout successful")
+    fancy_message(request, _("SignOut successful"))
     return redirect("account:login")
 
 
@@ -81,7 +82,7 @@ def Register(request, *args, **kwargs):
         if form.is_valid():
             user = form.save()
             login(request, user, backend="campaign.backends.EmailBackend")
-            fancy_message(request, f"welcome {user.username}")
+            fancy_message(request, _(f"welcome {user.username}"))
             return redirect("main:home")
         else:
             fancy_message(request, form.errors, level="error")
@@ -95,5 +96,5 @@ def Register(request, *args, **kwargs):
         "phone_number": request.POST.get("phone_number", None),
     }
     form = StylesCustomUserCreationForm(initial=previous_data)
-    my_context = {"Title": "Register", "form": form}
+    my_context = {"Title": "SignUp", "form": form}
     return render(request, "register.html", my_context)
