@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-23 20:08+0400\n"
+"POT-Creation-Date: 2023-11-23 21:05+0400\n"
 "PO-Revision-Date: 2023-11-20 23:12+0000\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -267,7 +267,7 @@ msgstr ""
 msgid "Is Check"
 msgstr ""
 
-#: .\main\models.py:124 .\main\models.py:125
+#: .\main\models.py:124 .\main\models.py:125 .\templates\main\footer.html:6
 msgid "Contact Us"
 msgstr ""
 
@@ -345,7 +345,7 @@ msgstr ""
 
 #: .\templates\login.html:56 .\templates\password_reset.html:40
 #: .\templates\password_reset_complete.html:27
-#: .\templates\password_reset_done.html:40 .\templates\register.html:121
+#: .\templates\password_reset_done.html:37 .\templates\register.html:121
 msgid "Sign In"
 msgstr ""
 
@@ -567,6 +567,20 @@ msgid ""
 "                                        If you prefer face-to-face "
 "interactions, you can visit our office at:\n"
 "                                    "
+msgstr ""
+
+#: .\templates\main\footer.html:5
+msgid ""
+"Need assistance or have inquiries? Our dedicated support team is ready to "
+"deliver the help you need.Reach out through our"
+msgstr ""
+
+#: .\templates\main\footer.html:7
+msgid "page or get immediate support using our online chat box."
+msgstr ""
+
+#: .\templates\main\footer.html:10
+msgid "© 2023 - All right reserved!"
 msgstr ""
 
 #: .\templates\main\header.html:73 .\templates\main\header.html:176
@@ -824,16 +838,6 @@ msgstr ""
 msgid "Have an account"
 msgstr ""
 
-#: .\templates\password_reset_complete.html:8
-#: .\templates\password_reset_done.html:8
-#: .\templates\password_reset_form.html:8
-msgid ""
-"\n"
-"                    Start your digital marketing with us. We are here to\n"
-"                    help you...\n"
-"                "
-msgstr ""
-
 #: .\templates\password_reset_complete.html:22
 msgid "Your password has been reset"
 msgstr ""
@@ -841,16 +845,21 @@ msgstr ""
 #: .\templates\password_reset_done.html:26
 msgid ""
 "\n"
-"                            an email containing instruction for resetting "
-"your account password have been sent, if you\n"
-"                            don't\n"
-"                            receiving an email, please make sure you've "
-"entered the address you registered with and\n"
-"                            check\n"
-"                            your\n"
-"                            spam\n"
-"                            folder\n"
-"                        "
+"                                        an email containing instruction for "
+"resetting your account password have been\n"
+"                                        sent, if you don't receiving an "
+"email, please make sure you've entered the\n"
+"                                        address you registered\n"
+"                                        with and check your spam folder\n"
+"                                    "
+msgstr ""
+
+#: .\templates\password_reset_form.html:8
+msgid ""
+"\n"
+"                    Start your digital marketing with us. We are here to\n"
+"                    help you...\n"
+"                "
 msgstr ""
 
 #: .\templates\password_reset_form.html:37
