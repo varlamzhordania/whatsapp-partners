@@ -9,844 +9,924 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-23 21:05+0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2023-11-23 21:59+0000\n"
+"Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.9\n"
 
 #: .\account\forms.py:13 .\account\forms.py:20 .\account\forms.py:73
 #: .\account\forms.py:80
 msgid "New password"
-msgstr ""
+msgstr "Nueva contraseña"
 
 #: .\account\forms.py:26
 msgid "New password confirmation"
-msgstr ""
+msgstr "Nueva confirmación de contraseña"
 
 #: .\account\forms.py:34 .\account\forms.py:93
 msgid "Confirm your new password"
-msgstr ""
+msgstr "Confirma tu nueva contraseña"
 
 #: .\account\forms.py:42 .\account\forms.py:50 .\account\forms.py:136
 #: .\account\forms.py:141 .\account\forms.py:195 .\account\forms.py:200
 #: .\main\forms.py:23 .\main\models.py:111 .\templates\login.html:25
 #: .\templates\password_reset.html:25
 msgid "Email"
-msgstr ""
+msgstr "Correo electrónico"
 
 #: .\account\forms.py:58
 msgid "Old password"
-msgstr ""
+msgstr "Contraseña anterior"
 
 #: .\account\forms.py:68
 msgid "Your old password"
-msgstr ""
+msgstr "Tu antigua contraseña"
 
 #: .\account\forms.py:86
 msgid "Confirm New Password"
-msgstr ""
+msgstr "Confirmar nueva contraseña"
 
 #: .\account\forms.py:105 .\account\forms.py:110 .\account\forms.py:164
 #: .\account\forms.py:169
 msgid "First Name"
-msgstr ""
+msgstr "Nombre de pila"
 
 #: .\account\forms.py:115 .\account\forms.py:120 .\account\forms.py:174
 #: .\account\forms.py:179 .\account\models.py:11
 msgid "Middle Name"
-msgstr ""
+msgstr "Segundo nombre"
 
 #: .\account\forms.py:125 .\account\forms.py:184 .\account\forms.py:189
 msgid "Last Name"
-msgstr ""
+msgstr "Apellido"
 
 #: .\account\forms.py:152 .\account\models.py:12
 msgid "Phone Number"
-msgstr ""
+msgstr "Número de teléfono"
 
 #: .\account\forms.py:206 .\account\forms.py:211
 msgid "Username"
-msgstr ""
+msgstr "Nombre de usuario"
 
 #: .\account\forms.py:216 .\templates\login.html:40
 msgid "Password"
-msgstr ""
+msgstr "Contraseña"
 
 #: .\account\forms.py:226
 msgid "Confirm Password"
-msgstr ""
+msgstr "confirmar Contraseña"
 
 #: .\account\models.py:10
 msgid "email address"
-msgstr ""
+msgstr "dirección de correo electrónico"
 
 #: .\account\models.py:13
 msgid "Last IP Address"
-msgstr ""
+msgstr "Última dirección IP"
 
 #: .\account\views.py:20
 msgid "Profile updated successfully"
-msgstr ""
+msgstr "perfil actualizado con éxito"
 
 #: .\account\views.py:27
 #, python-brace-format
 msgid "Profile | {request.user}"
-msgstr ""
+msgstr "Perfil | {request.user}"
 
 #: .\account\views.py:38
 msgid "Your password was successfully updated!"
-msgstr ""
+msgstr "¡Su contraseña se actualizó exitosamente!"
 
 #: .\account\views.py:58
 msgid "Email or Password is incorrect"
-msgstr ""
+msgstr "Correo electrónico o la contraseña son incorrectos"
 
 #: .\account\views.py:61
 msgid "Email and Password is required"
-msgstr ""
+msgstr "Se requiere correo electrónico y contraseña"
 
 #: .\account\views.py:65 .\templates\main\header.html:87
 #: .\templates\main\header.html:190 .\templates\main\home.html:271
 msgid "SignIn"
-msgstr ""
+msgstr "Iniciar sesión"
 
 #: .\account\views.py:74
 msgid "SignOut successful"
-msgstr ""
+msgstr "Cerrar sesión correctamente"
 
 #: .\account\views.py:85
 #, python-brace-format
 msgid "welcome {user.username}"
-msgstr ""
+msgstr "Bienvenido {user.username}"
 
 #: .\core\settings\settings.py:126
 msgid "English"
-msgstr ""
+msgstr "Inglés"
 
 #: .\core\settings\settings.py:127
 msgid "French"
-msgstr ""
+msgstr "Francés"
 
 #: .\core\settings\settings.py:128
 msgid "Spanish"
-msgstr ""
+msgstr "Español"
 
 #: .\core\settings\settings.py:129
 msgid "Arabic"
-msgstr ""
+msgstr "Arábica"
 
 #: .\main\forms.py:14
 msgid "Your Name"
-msgstr ""
+msgstr "Su nombre"
 
 #: .\main\forms.py:18
 msgid "enter your name"
-msgstr ""
+msgstr "introduzca su nombre"
 
 #: .\main\forms.py:32 .\main\models.py:114
 msgid "Message"
-msgstr ""
+msgstr "Mensaje"
 
 #: .\main\forms.py:36
 msgid "enter your message..."
-msgstr ""
+msgstr "Ingrese su mensaje..."
 
 #: .\main\models.py:28
 msgid ""
 "format: create only 1 record with types, example only create 1 home page "
 "record rest won't be count except category"
 msgstr ""
+"formato: cree solo 1 registro con tipos, por ejemplo, solo cree 1 registro "
+"de página de inicio, el resto no se contará excepto la categoría"
 
 #: .\main\models.py:31 .\main\models.py:97 .\main\models.py:120
 msgid "Date Create"
-msgstr ""
+msgstr "Fecha de creación"
 
 #: .\main\models.py:32 .\main\models.py:98 .\main\models.py:121
 msgid "Date Modified"
-msgstr ""
+msgstr "Fecha modificada"
 
 #: .\main\models.py:35
 msgid "Page"
-msgstr ""
+msgstr "Página"
 
 #: .\main\models.py:36
 msgid "Pages"
-msgstr ""
+msgstr "paginas"
 
 #: .\main\models.py:45
 msgid "Belonging Page"
-msgstr ""
+msgstr "Página de pertenencia"
 
 #: .\main\models.py:49
 msgid "Seo Title"
-msgstr ""
+msgstr "Título de SEO"
 
 #: .\main\models.py:50
 msgid "For SEO purposes, ideally between 60-70 characters."
-msgstr ""
+msgstr "Para fines de SEO, lo ideal es entre 60 y 70 caracteres."
 
 #: .\main\models.py:53
 msgid "Seo Description"
-msgstr ""
+msgstr "Descripción SEO"
 
 #: .\main\models.py:54
 msgid "For SEO purposes, ideally between 150-160 characters."
-msgstr ""
+msgstr "Para fines de SEO, lo ideal es entre 150 y 160 caracteres."
 
 #: .\main\models.py:57
 msgid "Seo Keywords"
-msgstr ""
+msgstr "Palabras clave de SEO"
 
 #: .\main\models.py:58
 msgid "Comma-separated list of keywords."
-msgstr ""
+msgstr "Lista de palabras clave separadas por comas."
 
 #: .\main\models.py:61
 msgid "Seo Canonical"
-msgstr ""
+msgstr "SEO canónico"
 
 #: .\main\models.py:63
 msgid "Seo Robot Index"
-msgstr ""
+msgstr "Índice de robots SEO"
 
 #: .\main\models.py:64
 msgid "Set to allow search engines to index this page."
 msgstr ""
+"Configurado para permitir que los motores de búsqueda indexen esta página."
 
 #: .\main\models.py:67
 msgid "Seo Robot Follow"
-msgstr ""
+msgstr "Robot SEO Seguir"
 
 #: .\main\models.py:68
 msgid "Set to allow search engines to follow links on this page."
 msgstr ""
+"Configurado para permitir que los motores de búsqueda sigan enlaces en esta "
+"página."
 
 #: .\main\models.py:76 .\main\models.py:77
 msgid "SEO"
-msgstr ""
+msgstr "SEO"
 
 #: .\main\models.py:88
 msgid "Question"
-msgstr ""
+msgstr "Pregunta"
 
 #: .\main\models.py:89
 msgid "format: max-255 , required"
-msgstr ""
+msgstr "formato: max-255, requerido"
 
 #: .\main\models.py:92
 msgid "Answer"
-msgstr ""
+msgstr "Respuesta"
 
 #: .\main\models.py:94
 msgid "format: required"
-msgstr ""
+msgstr "formato: requerido"
 
 #: .\main\models.py:96
 msgid "Published"
-msgstr ""
+msgstr "Publicado"
 
 #: .\main\models.py:101 .\main\models.py:102
 msgid "FAQ"
-msgstr ""
+msgstr "Preguntas más frecuentes"
 
 #: .\main\models.py:110
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #: .\main\models.py:115
 msgid "format:required , max-3000"
-msgstr ""
+msgstr "formato:requerido, max-3000"
 
 #: .\main\models.py:119
 msgid "Is Check"
-msgstr ""
+msgstr "es cheque"
 
 #: .\main\models.py:124 .\main\models.py:125 .\templates\main\footer.html:6
 msgid "Contact Us"
-msgstr ""
+msgstr "Contacta con nosotros"
 
 #: .\main\models.py:134
 msgid "Site Name"
-msgstr ""
+msgstr "Nombre del sitio"
 
 #: .\main\models.py:135
 msgid "format:max-255, the name of website"
-msgstr ""
+msgstr "formato:max-255, el nombre del sitio web"
 
 #: .\main\models.py:142
 msgid "Primary Logo"
-msgstr ""
+msgstr "Logotipo principal"
 
 #: .\main\models.py:143 .\main\models.py:150
 msgid "format: JPEG,JPG,PNG,SVG,WEBP"
-msgstr ""
+msgstr "formato: JPEG,JPG,PNG,SVG,WEBP"
 
 #: .\main\models.py:149
 msgid "Secondary Logo"
-msgstr ""
+msgstr "Logotipo secundario"
 
 #: .\main\models.py:152
 msgid "Physical Address"
-msgstr ""
+msgstr "Dirección física"
 
 #: .\main\models.py:153
 msgid "Facebook"
-msgstr ""
+msgstr "Facebook"
 
 #: .\main\models.py:153 .\main\models.py:154 .\main\models.py:161
 msgid "format: absolute URL"
-msgstr ""
+msgstr "formato: URL absoluta"
 
 #: .\main\models.py:154
 msgid "Instagram"
-msgstr ""
+msgstr "Instagram"
 
 #: .\main\models.py:156
 msgid "X(Twitter)"
-msgstr ""
+msgstr "X(Twitter)"
 
 #: .\main\models.py:157
 msgid "format: absolute URL,"
-msgstr ""
+msgstr "formato: URL absoluta,"
 
 #: .\main\models.py:161
 msgid "Youtube"
-msgstr ""
+msgstr "Youtube"
 
 #: .\main\models.py:163
 msgid "Api Token"
-msgstr ""
+msgstr "Token API"
 
 #: .\main\models.py:164
 msgid "format: used in post request to create campaign"
 msgstr ""
+"formato: utilizado en la solicitud de publicación para crear una campaña"
 
 #: .\main\views.py:48
 msgid "Our support will review and answer you as soon as possible"
-msgstr ""
+msgstr "Nuestro soporte lo revisará y le responderá lo antes posible."
 
 #: .\templates\login.html:30
 msgid "Your email here"
-msgstr ""
+msgstr "Tu correo electrónico aquí"
 
 #: .\templates\login.html:34 .\templates\password_reset.html:28
 msgid "Not valid email format"
-msgstr ""
+msgstr "Formato de correo electrónico no válido"
 
 #: .\templates\login.html:49 .\templates\register.html:95
 msgid "password must be at least 8 characters"
-msgstr ""
+msgstr "La contraseña debe tener al menos 8 caracteres"
 
 #: .\templates\login.html:56 .\templates\password_reset.html:40
 #: .\templates\password_reset_complete.html:27
 #: .\templates\password_reset_done.html:37 .\templates\register.html:121
 msgid "Sign In"
-msgstr ""
+msgstr "Iniciar sesión"
 
 #: .\templates\login.html:59
 msgid "Forgot Password"
-msgstr ""
+msgstr "Has olvidado tu contraseña"
 
 #: .\templates\login.html:61
 msgid "reset"
-msgstr ""
+msgstr "reiniciar"
 
 #: .\templates\login.html:67 .\templates\register.html:116
 msgid "Sign Up"
-msgstr ""
+msgstr "Inscribirse"
 
 #: .\templates\main\about.html:17
 msgid "<strong class='text-primary'>WhatsApp</strong> Partners"
-msgstr ""
+msgstr "Socios de <strong class='text-primary'>WhatsApp</strong>"
 
 #: .\templates\main\about.html:21
 msgid ""
 "\n"
-"                                        Welcome to WhatsApp Partners, where "
-"innovation meets opportunity. We are a\n"
+"                                        Welcome to WhatsApp Partners, where innovation meets opportunity. We are a\n"
 "                                        community\n"
 "                                        of\n"
-"                                        visionaries, leveraging the power of "
-"unused WhatsApp accounts to create a\n"
+"                                        visionaries, leveraging the power of unused WhatsApp accounts to create a\n"
 "                                        network of\n"
-"                                        partners earning together. Our "
-"platform is designed to simplify the process,\n"
+"                                        partners earning together. Our platform is designed to simplify the process,\n"
 "                                        turning\n"
-"                                        your dormant accounts into valuable "
-"assets that contribute to a connected,\n"
+"                                        your dormant accounts into valuable assets that contribute to a connected,\n"
 "                                        collaborative\n"
 "                                        world.\n"
 "                                    "
 msgstr ""
+"\n"
+"Bienvenido a WhatsApp Partners, donde la innovación se encuentra con las oportunidades. Somos un\n"
+"comunidad\n"
+"de\n"
+"visionarios, aprovechando el poder de las cuentas de WhatsApp no utilizadas para crear una\n"
+"red de\n"
+"socios que ganan juntos. Nuestra plataforma está diseñada para simplificar el proceso,\n"
+"torneado\n"
+"sus cuentas inactivas en activos valiosos que contribuyen a una vida conectada,\n"
+"colaborativo\n"
+"mundo."
 
 #: .\templates\main\about.html:46
 msgid "Our <strong class='text-primary'>Mission</strong>"
-msgstr ""
+msgstr "Nuestra <strong class='text-primary'>Misión</strong>"
 
 #: .\templates\main\about.html:50
 msgid ""
 "\n"
-"                                        At WhatsApp Partners, our mission is "
-"clear: to empower individuals globally by\n"
-"                                        unlocking the potential within their "
-"unused WhatsApp accounts. We're committed\n"
+"                                        At WhatsApp Partners, our mission is clear: to empower individuals globally by\n"
+"                                        unlocking the potential within their unused WhatsApp accounts. We're committed\n"
 "                                        to\n"
-"                                        providing a platform that transcends "
-"traditional communication, fostering an\n"
-"                                        environment where our partners not "
-"only connect but also earn seamlessly.\n"
+"                                        providing a platform that transcends traditional communication, fostering an\n"
+"                                        environment where our partners not only connect but also earn seamlessly.\n"
 "                                    "
 msgstr ""
+"\n"
+"En WhatsApp Partners, nuestra misión es clara: empoderar a las personas en todo el mundo mediante\n"
+"desbloquear el potencial dentro de sus cuentas de WhatsApp no utilizadas. estamos comprometidos\n"
+"a\n"
+"proporcionando una plataforma que trasciende la comunicación tradicional, fomentando una\n"
+"entorno donde nuestros socios no solo se conectan sino que también ganan sin problemas."
 
 #: .\templates\main\about.html:82
-msgid "What Sets <strong class='text-primary'>WhatsApp </strong>Partners Apart"
+msgid ""
+"What Sets <strong class='text-primary'>WhatsApp </strong>Partners Apart"
 msgstr ""
+"Lo que distingue a los socios de <strong class='text-primary'>WhatsApp "
+"</strong>"
 
 #: .\templates\main\about.html:86
 msgid ""
 "\n"
-"                                        <strong class=\"fw-bolder fs-5 text-"
-"secondary \">Innovation in\n"
+"                                        <strong class=\"fw-bolder fs-5 text-secondary \">Innovation in\n"
 "                                            Connectivity:</strong>\n"
 "                                        We\n"
-"                                        pride ourselves on being at the "
-"forefront of\n"
-"                                        innovation. Our platform is built on "
-"cutting-edge technology, ensuring a\n"
-"                                        seamless experience from the initial "
-"setup to ongoing earnings. WhatsApp\n"
-"                                        Partners is where innovation meets "
-"practicality.\n"
+"                                        pride ourselves on being at the forefront of\n"
+"                                        innovation. Our platform is built on cutting-edge technology, ensuring a\n"
+"                                        seamless experience from the initial setup to ongoing earnings. WhatsApp\n"
+"                                        Partners is where innovation meets practicality.\n"
 "                                    "
 msgstr ""
+"\n"
+"<strong class=\"fw-bolder fs-5 text-secundary \">Innovación en\n"
+"Conectividad:</strong>\n"
+"Nosotros\n"
+"Estamos orgullosos de estar a la vanguardia\n"
+"innovación. Nuestra plataforma está construida sobre tecnología de punta, asegurando una\n"
+"Experiencia perfecta desde la configuración inicial hasta las ganancias continuas. WhatsApp\n"
+"Partners es donde la innovación se encuentra con la practicidad."
 
 #: .\templates\main\about.html:97
 msgid ""
 "\n"
-"                                        <strong class=\"fw-bolder fs-5 text-"
-"secondary \">Effortless Passive\n"
+"                                        <strong class=\"fw-bolder fs-5 text-secondary \">Effortless Passive\n"
 "                                            Earning:</strong>\n"
-"                                        We understand the importance of "
-"simplicity and\n"
-"                                        efficiency. Our system is crafted to "
-"enable passive earning with minimal daily\n"
-"                                        effort. Your unused WhatsApp "
-"accounts become a reliable source of income,\n"
+"                                        We understand the importance of simplicity and\n"
+"                                        efficiency. Our system is crafted to enable passive earning with minimal daily\n"
+"                                        effort. Your unused WhatsApp accounts become a reliable source of income,\n"
 "                                        effortlessly.\n"
 "                                    "
 msgstr ""
+"\n"
+"<strong class=\"fw-bolder fs-5 text-secundario \">Pasivo sin esfuerzo\n"
+"Ganancia:</strong>\n"
+"Entendemos la importancia de la simplicidad y\n"
+"eficiencia. Nuestro sistema está diseñado para permitir ganancias pasivas con un mínimo diario\n"
+"esfuerzo. Tus cuentas de WhatsApp no utilizadas se convierten en una fuente confiable de ingresos,\n"
+"sin esfuerzo."
 
 #: .\templates\main\about.html:107
 msgid ""
 "\n"
-"                                        <strong class=\"fw-bolder fs-5 text-"
-"secondary \">Scalable Opportunities:</strong>\n"
-"                                        Whether you're managing a few "
-"accounts or aiming for 60,\n"
-"                                        WhatsApp Partners provides the tools "
-"and support you need. As you expand your\n"
-"                                        network, your potential earnings "
-"grow. We believe in the scalability of success.\n"
+"                                        <strong class=\"fw-bolder fs-5 text-secondary \">Scalable Opportunities:</strong>\n"
+"                                        Whether you're managing a few accounts or aiming for 60,\n"
+"                                        WhatsApp Partners provides the tools and support you need. As you expand your\n"
+"                                        network, your potential earnings grow. We believe in the scalability of success.\n"
 "                                    "
 msgstr ""
+"\n"
+"<strong class=\"fw-bolder fs-5 text-secundary \">Oportunidades escalables:</strong>\n"
+"Ya sea que esté administrando algunas cuentas o apuntando a 60,\n"
+"WhatsApp Partners proporciona las herramientas y el soporte que necesita. A medida que expandes tu\n"
+"red, sus ganancias potenciales crecen. Creemos en la escalabilidad del éxito."
 
 #: .\templates\main\about.html:127
 msgid "Join Our Vibrant <strong class='text-primary'>Community</strong>"
 msgstr ""
+"Únase a nuestra vibrante <strong class='text-primary'>comunidad</strong>"
 
 #: .\templates\main\about.html:131
 msgid ""
 "\n"
-"                                        WhatsApp Partners is not just a "
-"platform; it's a vibrant community. We celebrate\n"
-"                                        diversity, creativity, and the "
-"entrepreneurial spirit. Joining us means becoming\n"
-"                                        a part of a global network of "
-"individuals who are transforming the way we think\n"
+"                                        WhatsApp Partners is not just a platform; it's a vibrant community. We celebrate\n"
+"                                        diversity, creativity, and the entrepreneurial spirit. Joining us means becoming\n"
+"                                        a part of a global network of individuals who are transforming the way we think\n"
 "                                        about communication and income.\n"
 "                                    "
 msgstr ""
+"\n"
+"WhatsApp Partners no es sólo una plataforma; es una comunidad vibrante. Nosotros celebramos\n"
+"diversidad, creatividad y espíritu emprendedor. Unirse a nosotros significa convertirse\n"
+"parte de una red global de personas que están transformando la forma en que pensamos\n"
+"sobre comunicación e ingresos."
 
 #: .\templates\main\contact.html:17
 msgid "Contact <strong class='text-primary'> WhatsApp</strong> Partners"
 msgstr ""
+"Contacta con los socios de <strong class='text-primary'> WhatsApp</strong>"
 
 #: .\templates\main\contact.html:21
 msgid ""
 "\n"
-"                                        Have a question, suggestion, or just "
-"want to connect? We're here to help! Feel\n"
-"                                        free to reach out to us using the "
-"information below or by filling out the\n"
+"                                        Have a question, suggestion, or just want to connect? We're here to help! Feel\n"
+"                                        free to reach out to us using the information below or by filling out the\n"
 "                                        contact form.\n"
 "                                    "
 msgstr ""
+"\n"
+"¿Tiene alguna pregunta, sugerencia o simplemente quiere conectarse? ¡Estamos aquí para ayudar! Sentir\n"
+"No dude en comunicarse con nosotros utilizando la información a continuación o completando el formulario\n"
+"Formulario de contacto."
 
 #: .\templates\main\contact.html:28
 msgid "Get in Touch"
-msgstr ""
+msgstr "Ponerse en contacto"
 
 #: .\templates\main\contact.html:31
 msgid ""
 "\n"
-"                                        <strong class=\"text-secondary fw-"
-"bolder\">\n"
+"                                        <strong class=\"text-secondary fw-bolder\">\n"
 "                                            General Inquiries:\n"
 "                                        </strong>\n"
-"                                        For general questions about WhatsApp "
-"Partners or to inquire about our services,\n"
+"                                        For general questions about WhatsApp Partners or to inquire about our services,\n"
 "                                        please\n"
 "                                        email us at\n"
-"                                        <a href=\"mailto: "
-"info@whatsapppartners.com\" class=\"alert-link\">info@whatsapppartners.com</"
-"a>\n"
+"                                        <a href=\"mailto: info@whatsapppartners.com\" class=\"alert-link\">info@whatsapppartners.com</a>\n"
 "                                    "
 msgstr ""
+"\n"
+"<strong class=\"texto-secundario fw-bolder\">\n"
+"Consultas generales:\n"
+"</strong>\n"
+"Para preguntas generales sobre los socios de WhatsApp o para consultar sobre nuestros servicios,\n"
+"por favor\n"
+"Envíanos un email a\n"
+"<a href=\"mailto: info@whatsapppartners.com\" class=\"alert-link\">info@whatsapppartners.com</a>"
 
 #: .\templates\main\contact.html:42
 msgid ""
 "\n"
-"                                        <strong class=\"text-secondary fw-"
-"bolder\">\n"
+"                                        <strong class=\"text-secondary fw-bolder\">\n"
 "                                            Customer Support:\n"
 "                                        </strong>\n"
-"                                        If you need assistance with your "
-"account, payments, or any technical support,\n"
+"                                        If you need assistance with your account, payments, or any technical support,\n"
 "                                        our\n"
-"                                        customer support team is ready to "
-"help. Contact them at\n"
-"                                        <a href=\"mailto: "
-"support@whatsapppartners.com\" class=\"alert-link\">support@whatsapppartners."
-"com</a>\n"
+"                                        customer support team is ready to help. Contact them at\n"
+"                                        <a href=\"mailto: support@whatsapppartners.com\" class=\"alert-link\">support@whatsapppartners.com</a>\n"
 "                                    "
 msgstr ""
+"\n"
+"<strong class=\"texto-secundario fw-bolder\">\n"
+"Atención al cliente:\n"
+"</strong>\n"
+"Si necesita ayuda con su cuenta, pagos o cualquier soporte técnico,\n"
+"nuestro\n"
+"El equipo de atención al cliente está listo para ayudar. Contáctelos en\n"
+"<a href=\"mailto: support@whatsapppartners.com\" class=\"alert-link\">support@whatsapppartners.com</a>"
 
 #: .\templates\main\contact.html:54
 msgid ""
 "\n"
-"                                        <strong class=\"text-secondary fw-"
-"bolder\">\n"
+"                                        <strong class=\"text-secondary fw-bolder\">\n"
 "                                            Business Inquiries:\n"
 "                                        </strong>\n"
-"                                        Interested in partnering with "
-"WhatsApp Partners or exploring business\n"
+"                                        Interested in partnering with WhatsApp Partners or exploring business\n"
 "                                        opportunities?\n"
-"                                        Reach out to our business "
-"development team at\n"
-"                                        <a href=\"mailto: "
-"partnerships@whatsapppartners.com\" class=\"alert-link"
-"\">partnerships@whatsapppartners.com</a>\n"
+"                                        Reach out to our business development team at\n"
+"                                        <a href=\"mailto: partnerships@whatsapppartners.com\" class=\"alert-link\">partnerships@whatsapppartners.com</a>\n"
 "                                    "
 msgstr ""
+"\n"
+"<strong class=\"texto-secundario fw-bolder\">\n"
+"Preguntas de negocios:\n"
+"</strong>\n"
+"Interesado en asociarse con socios de WhatsApp o explorar negocios\n"
+"¿oportunidades?\n"
+"Comuníquese con nuestro equipo de desarrollo comercial en\n"
+"<a href=\"mailto: partners@whatsapppartners.com\" class=\"alert-link\">partnerships@whatsapppartners.com</a>"
 
 #: .\templates\main\contact.html:77
 msgid "Connect on<strong class='text-primary'> Social </strong>Media"
 msgstr ""
+"Conéctese en las <strong class='text-primary'> redes </strong> sociales"
 
 #: .\templates\main\contact.html:81
 msgid ""
 "\n"
-"                                        Stay updated and engaged by "
-"following us on social media:\n"
+"                                        Stay updated and engaged by following us on social media:\n"
 "                                    "
 msgstr ""
+"\n"
+"Manténgase actualizado y comprometido siguiéndonos en las redes sociales:"
 
 #: .\templates\main\contact.html:123
 msgid "<strong class='text-primary'>Visit</strong> Us"
-msgstr ""
+msgstr "<strong class='text-primary'>Visítenos</strong>"
 
 #: .\templates\main\contact.html:127
 msgid ""
 "\n"
-"                                        If you prefer face-to-face "
-"interactions, you can visit our office at:\n"
+"                                        If you prefer face-to-face interactions, you can visit our office at:\n"
 "                                    "
 msgstr ""
+"\n"
+"Si prefiere interacciones cara a cara, puede visitar nuestra oficina en:"
 
 #: .\templates\main\footer.html:5
 msgid ""
 "Need assistance or have inquiries? Our dedicated support team is ready to "
 "deliver the help you need.Reach out through our"
 msgstr ""
+"¿Necesita ayuda o tiene consultas? Nuestro equipo de soporte dedicado está "
+"listo para brindarle la ayuda que necesita. Comuníquese a través de nuestro"
 
 #: .\templates\main\footer.html:7
 msgid "page or get immediate support using our online chat box."
 msgstr ""
+"página u obtenga soporte inmediato utilizando nuestro cuadro de chat en "
+"línea."
 
 #: .\templates\main\footer.html:10
 msgid "© 2023 - All right reserved!"
-msgstr ""
+msgstr "© 2023 - ¡Todos los derechos reservados!"
 
 #: .\templates\main\header.html:73 .\templates\main\header.html:176
 msgid "Profile"
-msgstr ""
+msgstr "Perfil"
 
 #: .\templates\main\header.html:80 .\templates\main\header.html:183
 msgid "SignOut"
-msgstr ""
+msgstr "Desconectar"
 
 #: .\templates\main\header.html:89 .\templates\main\header.html:192
 msgid "SignUp"
-msgstr ""
+msgstr "Inscribirse"
 
 #: .\templates\main\header.html:98
 msgid "Home"
-msgstr ""
+msgstr "Hogar"
 
 #: .\templates\main\header.html:104
 msgid "My WhatsApp"
-msgstr ""
+msgstr "mi WhatsApp"
 
 #: .\templates\main\header.html:111
 msgid "Payments"
-msgstr ""
+msgstr "Pagos"
 
 #: .\templates\main\header.html:118
 msgid "About US"
-msgstr ""
+msgstr "Sobre nosotros"
 
 #: .\templates\main\header.html:125
 msgid "Contact us"
-msgstr ""
+msgstr "Contacta con nosotros"
 
 #: .\templates\main\home.html:12
 msgid ""
 "Unlock the Earning Potential of Your Dormant <strong class='text-primary'> "
 "WhatsApp </strong> Accounts"
 msgstr ""
+"Libere el potencial de ingresos de sus cuentas inactivas de <strong "
+"class='text-primary'> WhatsApp </strong>"
 
 #: .\templates\main\home.html:13
 msgid ""
 "Join Our Global Network, Earn up to $2000 Monthly – No Investment Needed!"
 msgstr ""
+"Únase a nuestra red global, gane hasta $2000 mensuales: ¡no se necesita "
+"inversión!"
 
 #: .\templates\main\home.html:17
 msgid ""
 "\n"
-"                                        Do you have old, unused WhatsApp "
-"accounts? Or the capability to manage multiple\n"
-"                                        accounts? Convert these resources "
-"into a steady income stream with our\n"
+"                                        Do you have old, unused WhatsApp accounts? Or the capability to manage multiple\n"
+"                                        accounts? Convert these resources into a steady income stream with our\n"
 "                                        cutting-edge\n"
-"                                        communication technology. Designed "
-"with a focus on the ambitious,\n"
+"                                        communication technology. Designed with a focus on the ambitious,\n"
 "                                        entrepreneurial\n"
-"                                        spirits of developing countries, our "
-"partnership program enables you to gain\n"
+"                                        spirits of developing countries, our partnership program enables you to gain\n"
 "                                        additional income effortlessly.\n"
 "                                    "
 msgstr ""
+"\n"
+"¿Tiene cuentas de WhatsApp antiguas y sin usar? O la capacidad de gestionar múltiples\n"
+"cuentas? Convierta estos recursos en un flujo de ingresos constante con nuestra\n"
+"innovador\n"
+"tecnología de la comunicación. Diseñado con un enfoque en lo ambicioso,\n"
+"de emprendedor\n"
+"espíritus de los países en desarrollo, nuestro programa de asociación le permite obtener\n"
+"ingresos adicionales sin esfuerzo."
 
 #: .\templates\main\home.html:29 .\templates\main\join_us.html:16
 msgid "Become a Partner"
-msgstr ""
+msgstr "Convertirse en un compañero"
 
 #: .\templates\main\home.html:32
 msgid "Learn more"
-msgstr ""
+msgstr "Aprende más"
 
 #: .\templates\main\home.html:53
 msgid "Effortless Setup"
-msgstr ""
+msgstr "Configuración sin esfuerzo"
 
 #: .\templates\main\home.html:58
 msgid ""
 "\n"
-"                                        Embark on your journey with just "
-"three unused WhatsApp accounts and a stable\n"
-"                                        internet connection. Our step-by-"
-"step guide ensures a seamless setup process.\n"
+"                                        Embark on your journey with just three unused WhatsApp accounts and a stable\n"
+"                                        internet connection. Our step-by-step guide ensures a seamless setup process.\n"
 "                                    "
 msgstr ""
+"\n"
+"Embárcate en tu viaje con sólo tres cuentas de WhatsApp no utilizadas y un estable\n"
+"conexión a Internet. Nuestra guía paso a paso garantiza un proceso de configuración perfecto."
 
 #: .\templates\main\home.html:70
 msgid "Passive Earning Made Simple"
-msgstr ""
+msgstr "Ganancias pasivas simplificadas"
 
 #: .\templates\main\home.html:75
 msgid ""
 "\n"
-"                                        Integrate your WhatsApp accounts "
-"into our expansive conference system and start\n"
-"                                        earning with minimal daily effort. "
-"Your unused accounts become a consistent\n"
+"                                        Integrate your WhatsApp accounts into our expansive conference system and start\n"
+"                                        earning with minimal daily effort. Your unused accounts become a consistent\n"
 "                                        source of income effortlessly.\n"
 "                                    "
 msgstr ""
+"\n"
+"Integre sus cuentas de WhatsApp en nuestro amplio sistema de conferencias y comience\n"
+"ganando con el mínimo esfuerzo diario. Sus cuentas no utilizadas se vuelven consistentes\n"
+"fuente de ingresos sin esfuerzo."
 
 #: .\templates\main\home.html:88
 msgid "Scalable Opportunity Awaits"
-msgstr ""
+msgstr "Te espera una oportunidad escalable"
 
 #: .\templates\main\home.html:93
 msgid ""
 "\n"
-"                                        Unlock the potential of your "
-"earnings by effortlessly managing up to 60 WhatsApp\n"
-"                                        accounts all under one roof. Watch "
-"your profit scale as you expand your network.\n"
+"                                        Unlock the potential of your earnings by effortlessly managing up to 60 WhatsApp\n"
+"                                        accounts all under one roof. Watch your profit scale as you expand your network.\n"
 "                                    "
 msgstr ""
+"\n"
+"Libera el potencial de tus ganancias administrando sin esfuerzo hasta 60 WhatsApp\n"
+"Cuentas todas bajo un mismo techo. Observe la escala de sus ganancias a medida que expande su red."
 
 #: .\templates\main\home.html:115
 msgid "Why Be a <strong class='text-primary'>Partner?</strong>"
-msgstr ""
+msgstr "¿Por qué ser <strong class='text-primary'>socio?</strong>"
 
 #: .\templates\main\home.html:116
 msgid "Explore Unlimited Earning Potential"
-msgstr ""
+msgstr "Explore el potencial de ganancias ilimitado"
 
 #: .\templates\main\home.html:120
 msgid ""
 "\n"
-"                                        Discover the exciting potential of "
-"your unused WhatsApp account. Be a partner\n"
-"                                        with WhatsApp Partners and tap into "
-"a world of opportunities to earn while\n"
-"                                        contributing to a global "
-"communication network.\n"
+"                                        Discover the exciting potential of your unused WhatsApp account. Be a partner\n"
+"                                        with WhatsApp Partners and tap into a world of opportunities to earn while\n"
+"                                        contributing to a global communication network.\n"
 "                                    "
 msgstr ""
+"\n"
+"Descubra el apasionante potencial de su cuenta de WhatsApp no utilizada. ser un socio\n"
+"con los socios de WhatsApp y aproveche un mundo de oportunidades para ganar mientras\n"
+"contribuyendo a una red de comunicación global."
 
 #: .\templates\main\home.html:129
 msgid "Flexible Work"
-msgstr ""
+msgstr "Trabajo flexible"
 
 #: .\templates\main\home.html:133
 msgid "Generous Rewards"
-msgstr ""
+msgstr "Generosas recompensas"
 
 #: .\templates\main\home.html:137
 msgid ""
 "\n"
-"                                        Enjoy the flexibility of working on "
-"your terms. Our partnership program is\n"
-"                                        designed to provide you with "
-"generous rewards for every conference session\n"
-"                                        conducted through your WhatsApp "
-"account.\n"
+"                                        Enjoy the flexibility of working on your terms. Our partnership program is\n"
+"                                        designed to provide you with generous rewards for every conference session\n"
+"                                        conducted through your WhatsApp account.\n"
 "                                    "
 msgstr ""
+"\n"
+"Disfrute de la flexibilidad de trabajar en sus términos. Nuestro programa de asociación es\n"
+"diseñado para brindarle generosas recompensas por cada sesión de la conferencia\n"
+"realizado a través de su cuenta de WhatsApp."
 
 #: .\templates\main\home.html:155
 msgid "How It <strong class='text-primary'>Works</strong>"
-msgstr ""
+msgstr "Cómo funciona <strong class='text-primary'>funciona</strong>"
 
 #: .\templates\main\home.html:163
 msgid "Register"
-msgstr ""
+msgstr "Registro"
 
 #: .\templates\main\home.html:168
 msgid ""
 "\n"
-"                                                        Joining WhatsApp "
-"Partners is easy. Simply register your\n"
+"                                                        Joining WhatsApp Partners is easy. Simply register your\n"
 "                                                        WhatsApp account,\n"
-"                                                        providing accurate "
-"information to ensure seamless transactions.\n"
+"                                                        providing accurate information to ensure seamless transactions.\n"
 "                                                    "
 msgstr ""
+"\n"
+"Unirse a WhatsApp Partners es fácil. Simplemente registra tu\n"
+"cuenta whatsapp,\n"
+"proporcionando información precisa para garantizar transacciones fluidas."
 
 #: .\templates\main\home.html:181
 msgid "Earning"
-msgstr ""
+msgstr "Ganador"
 
 #: .\templates\main\home.html:186
 msgid ""
 "\n"
-"                                                        Learn how your "
-"WhatsApp account can become a revenue-generating\n"
+"                                                        Learn how your WhatsApp account can become a revenue-generating\n"
 "                                                        asset.\n"
 "                                                        We'll\n"
-"                                                        guide you through "
-"the process of earning with each successful\n"
+"                                                        guide you through the process of earning with each successful\n"
 "                                                        conference\n"
 "                                                        session.\n"
 "                                                    "
 msgstr ""
+"\n"
+"Descubra cómo su cuenta de WhatsApp puede convertirse en una fuente de ingresos\n"
+"activo.\n"
+"Bien\n"
+"guiarlo a través del proceso de ganar dinero con cada éxito\n"
+"conferencia\n"
+"sesión."
 
 #: .\templates\main\home.html:202
 msgid "Payment"
-msgstr ""
+msgstr "Pago"
 
 #: .\templates\main\home.html:207
 msgid ""
 "\n"
-"                                                        JUnderstand our "
-"transparent payment process. Learn how we value\n"
+"                                                        JUnderstand our transparent payment process. Learn how we value\n"
 "                                                        your\n"
-"                                                        contribution and "
-"ensure timely and hassle-free payments.\n"
+"                                                        contribution and ensure timely and hassle-free payments.\n"
 "                                                    "
 msgstr ""
+"\n"
+"Comprenda nuestro proceso de pago transparente. Descubra cómo valoramos\n"
+"su\n"
+"contribución y garantizar pagos puntuales y sin complicaciones."
 
 #: .\templates\main\home.html:240
 msgid "Questions or Concerns?"
-msgstr ""
+msgstr "¿Preguntas o inquietudes?"
 
 #: .\templates\main\home.html:244
 msgid ""
 "\n"
-"                                        We're here to assist you every step "
-"of the way. Contact WhatsApp Partners for\n"
-"                                        any inquiries or support you may "
-"need.\n"
+"                                        We're here to assist you every step of the way. Contact WhatsApp Partners for\n"
+"                                        any inquiries or support you may need.\n"
 "                                    "
 msgstr ""
+"\n"
+"Estamos aquí para ayudarle en cada paso del camino. Póngase en contacto con los socios de WhatsApp para\n"
+"cualquier consulta o soporte que necesites."
 
 #: .\templates\main\home.html:261
 msgid "Already a <strong class='text-primary'>Partner?</strong>"
-msgstr ""
+msgstr "¿Ya eres <strong class='text-primary'>socio?</strong>"
 
 #: .\templates\main\home.html:265
 msgid ""
 "\n"
-"                                        Log in to your WhatsApp Partners "
-"account to track your communication statistics\n"
+"                                        Log in to your WhatsApp Partners account to track your communication statistics\n"
 "                                        and earnings.\n"
 "                                    "
 msgstr ""
+"\n"
+"Inicie sesión en su cuenta de WhatsApp Partners para realizar un seguimiento de sus estadísticas de comunicación\n"
+"y ganancias."
 
 #: .\templates\main\join_us.html:6
 msgid "Join WhatsApp Partners"
-msgstr ""
+msgstr "Únase a los socios de WhatsApp"
 
 #: .\templates\main\join_us.html:10
 msgid ""
 "\n"
-"                        Ready to transform your WhatsApp account into a "
-"valuable asset? Register now to become a\n"
+"                        Ready to transform your WhatsApp account into a valuable asset? Register now to become a\n"
 "                        partner and start earning!\n"
 "                    "
 msgstr ""
+"\n"
+"¿Listo para transformar tu cuenta de WhatsApp en un activo valioso? Regístrese ahora para convertirse en\n"
+"¡Asóciese y comience a ganar!"
 
 #: .\templates\password_reset.html:35
 msgid "Continue"
-msgstr ""
+msgstr "Continuar"
 
 #: .\templates\password_reset.html:38 .\templates\register.html:119
 msgid "Have an account"
-msgstr ""
+msgstr "Tener una cuenta"
 
 #: .\templates\password_reset_complete.html:22
 msgid "Your password has been reset"
-msgstr ""
+msgstr "Tu contraseña ha sido restablecida"
 
 #: .\templates\password_reset_done.html:26
 msgid ""
 "\n"
-"                                        an email containing instruction for "
-"resetting your account password have been\n"
-"                                        sent, if you don't receiving an "
-"email, please make sure you've entered the\n"
+"                                        an email containing instruction for resetting your account password have been\n"
+"                                        sent, if you don't receiving an email, please make sure you've entered the\n"
 "                                        address you registered\n"
 "                                        with and check your spam folder\n"
 "                                    "
 msgstr ""
+"\n"
+"Se ha enviado un correo electrónico que contiene instrucciones para restablecer la contraseña de su cuenta.\n"
+"enviado, si no recibe un correo electrónico, asegúrese de haber ingresado el\n"
+"dirección que registró\n"
+"con y revisa tu carpeta de spam"
 
 #: .\templates\password_reset_form.html:8
 msgid ""
@@ -855,149 +935,156 @@ msgid ""
 "                    help you...\n"
 "                "
 msgstr ""
+"\n"
+"Comienza tu marketing digital con nosotros. Estamos aquí para\n"
+"ayudarte..."
 
 #: .\templates\password_reset_form.html:37
 msgid "Reset Password"
-msgstr ""
+msgstr "Restablecer la contraseña"
 
 #: .\templates\profile.html:7
 msgid "Information"
-msgstr ""
+msgstr "Información"
 
 #: .\templates\profile.html:18 .\templates\register.html:60
 msgid "Email is required!"
-msgstr ""
+msgstr "¡Correo electronico es requerido!"
 
 #: .\templates\profile.html:28
 msgid "phone is a required field"
-msgstr ""
+msgstr "El teléfono es un campo obligatorio."
 
 #: .\templates\profile.html:40 .\templates\register.html:31
 msgid "first name is a required field"
-msgstr ""
+msgstr "el nombre es un campo obligatorio"
 
 #: .\templates\profile.html:57 .\templates\register.html:48
 msgid "last name is a required field"
-msgstr ""
+msgstr "El apellido es un campo obligatorio."
 
 #: .\templates\profile.html:62
 msgid "Save"
-msgstr ""
+msgstr "Ahorrar"
 
 #: .\templates\profile.html:72
 msgid "Password Reset"
-msgstr ""
+msgstr "Restablecimiento de contraseña"
 
 #: .\templates\profile.html:85
 msgid "old password is required!"
-msgstr ""
+msgstr "¡Se requiere contraseña antigua!"
 
 #: .\templates\profile.html:95
 msgid "new password must be at least 8 characters"
-msgstr ""
+msgstr "La nueva contraseña debe tener al menos 8 caracteres."
 
 #: .\templates\profile.html:105
 msgid "Please confirm your new password"
-msgstr ""
+msgstr "Por favor confirma tu nueva contraseña"
 
 #: .\templates\profile.html:111
 msgid "Change Password"
-msgstr ""
+msgstr "Cambiar la contraseña"
 
 #: .\templates\register.html:70
 msgid "Username most be at least 8 character"
-msgstr ""
+msgstr "El nombre de usuario debe tener al menos 8 caracteres."
 
 #: .\templates\register.html:82
 msgid "Phone number is required in +RRXXXXXXXXXX pattern"
-msgstr ""
+msgstr "Se requiere el número de teléfono en el patrón +RRXXXXXXXXXXXX"
 
 #: .\templates\register.html:107
 msgid "password2 is a required field"
-msgstr ""
+msgstr "contraseña2 es un campo obligatorio"
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:15
 msgid "Messages"
-msgstr ""
+msgstr "Mensajes"
 
 #: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
 msgid "Site Maps"
-msgstr ""
+msgstr "Mapas del sitio"
 
 #: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
 msgid "Static Files"
-msgstr ""
+msgstr "Archivos estáticos"
 
 #: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
 msgid "Syndication"
-msgstr ""
+msgstr "Sindicación"
 
 #. Translators: String used to replace omitted page numbers in elided page
 #. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
 #: .\venv\Lib\site-packages\django\core\paginator.py:30
 msgid "…"
-msgstr ""
+msgstr "..."
 
 #: .\venv\Lib\site-packages\django\core\paginator.py:50
 msgid "That page number is not an integer"
-msgstr ""
+msgstr "Ese número de página no es un número entero."
 
 #: .\venv\Lib\site-packages\django\core\paginator.py:52
 msgid "That page number is less than 1"
-msgstr ""
+msgstr "Ese número de página es menor que 1."
 
 #: .\venv\Lib\site-packages\django\core\paginator.py:54
 msgid "That page contains no results"
-msgstr ""
+msgstr "Esa página no contiene resultados."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:22
 msgid "Enter a valid value."
-msgstr ""
+msgstr "Introduce un valor valido."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:104
 #: .\venv\Lib\site-packages\django\forms\fields.py:752
 msgid "Enter a valid URL."
-msgstr ""
+msgstr "Introduzca una URL válida."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:165
 msgid "Enter a valid integer."
-msgstr ""
+msgstr "Introduzca un número entero válido."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:176
 msgid "Enter a valid email address."
-msgstr ""
+msgstr "Introduzca una dirección de correo electrónico válida."
 
 #. Translators: "letters" means latin letters: a-z and A-Z.
 #: .\venv\Lib\site-packages\django\core\validators.py:259
 msgid ""
 "Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
 msgstr ""
+"Ingrese un \"slug\" válido que consta de letras, números, guiones bajos o "
+"guiones."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:267
 msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
-"hyphens."
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
+" hyphens."
 msgstr ""
+"Ingrese un \"slug\" válido que consta de letras, números, guiones bajos o "
+"guiones Unicode."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:279
 #: .\venv\Lib\site-packages\django\core\validators.py:287
 #: .\venv\Lib\site-packages\django\core\validators.py:316
 msgid "Enter a valid IPv4 address."
-msgstr ""
+msgstr "Ingrese una dirección IPv4 válida."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:296
 #: .\venv\Lib\site-packages\django\core\validators.py:317
 msgid "Enter a valid IPv6 address."
-msgstr ""
+msgstr "Ingrese una dirección IPv6 válida."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:308
 #: .\venv\Lib\site-packages\django\core\validators.py:315
 msgid "Enter a valid IPv4 or IPv6 address."
-msgstr ""
+msgstr "Ingrese una dirección IPv4 o IPv6 válida."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:351
 msgid "Enter only digits separated by commas."
-msgstr ""
+msgstr "Introduzca sólo dígitos separados por comas."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:357
 #, python-format
@@ -1045,7 +1132,7 @@ msgstr[1] ""
 #: .\venv\Lib\site-packages\django\forms\fields.py:347
 #: .\venv\Lib\site-packages\django\forms\fields.py:386
 msgid "Enter a number."
-msgstr ""
+msgstr "Ingrese un numero."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:463
 #, python-format
@@ -1079,12 +1166,12 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:605
 msgid "Null characters are not allowed."
-msgstr ""
+msgstr "No se permiten caracteres nulos."
 
 #: .\venv\Lib\site-packages\django\db\models\base.py:1423
 #: .\venv\Lib\site-packages\django\forms\models.py:893
 msgid "and"
-msgstr ""
+msgstr "y"
 
 #: .\venv\Lib\site-packages\django\db\models\base.py:1425
 #, python-format
@@ -1099,15 +1186,15 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:128
 #, python-format
 msgid "Value %(value)r is not a valid choice."
-msgstr ""
+msgstr "El valor %(valor)r no es una opción válida."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:129
 msgid "This field cannot be null."
-msgstr ""
+msgstr "Este campo no puede ser nulo."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:130
 msgid "This field cannot be blank."
-msgstr ""
+msgstr "Este campo no puede estar vacío."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:131
 #, python-format
@@ -1176,15 +1263,15 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1489
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
-"uuuuuu]][TZ] format."
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1497
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
+"“%(value)s” value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1502
@@ -1203,8 +1290,8 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1789
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
-"uuuuuu] format."
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1793
@@ -1363,7 +1450,8 @@ msgid "Many-to-many relationship"
 msgstr ""
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
+#. characters will prevent the default label_suffix to be appended to the
+#. label
 #: .\venv\Lib\site-packages\django\forms\boundfield.py:184
 msgid ":?.!"
 msgstr ""
@@ -1413,7 +1501,8 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:625
 #, python-format
-msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid ""
+"Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
@@ -1521,7 +1610,8 @@ msgid "The inline value did not match the parent instance."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1429
-msgid "Select a valid choice. That choice is not one of the available choices."
+msgid ""
+"Select a valid choice. That choice is not one of the available choices."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1568
@@ -1986,11 +2076,11 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:127
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the “Referrer-Policy: no-referrer” header, please remove them. The "
-"CSRF protection requires the “Referer” header to do strict referer checking. "
-"If you’re concerned about privacy, use alternatives like <a rel=\"noreferrer"
-"\" …> for links to third-party sites."
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
+" including the “Referrer-Policy: no-referrer” header, please remove them. "
+"The CSRF protection requires the “Referer” header to do strict referer "
+"checking. If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:136
@@ -2041,8 +2131,8 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:652
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because %(class_name)s."
-"allow_future is False."
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:692
@@ -2098,10 +2188,10 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
 #, python-format
 msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
-"\">DEBUG=True</a> is in your settings file and you have not configured any "
-"URLs."
+"You are seeing this page because <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
+"and you have not configured any URLs."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:229
