@@ -4,13 +4,15 @@
     --primary-hover-color: #4CAF50;
     --primary-active-color: #449e48;
     --primary-focus-color: #449e48;
-
+    --primary-rgb: 37, 211, 102;
+    --primary-subtle: #D5F8E4;
     /* Secondary Colors */
     --secondary-color: #128C7E;
     --secondary-hover-color: #107e71;
     --secondary-active-color: #0e7065;
     --secondary-focus-color: #0e7065;
-
+    --secondary-rgb: 18, 140, 126;
+    --secondary-subtle: #728c89;
     /* Background and Text Colors */
     --background-color: #fff;
     /*--text-color: #37474F;*/
@@ -34,6 +36,14 @@
     --warning-color: #FFA000;
     --danger-color: #FF3D00;
 
+    --bs-primary: var(--primary-color) !important;
+    --bs-secondary: var(--secondary-color) !important;
+    --bs-primary-rgb: var(--primary-rgb) !important;
+    --bs-secondary-rgb: var(--secondary-rgb) !important;
+    --bs-primary-bg-subtle: var(--primary-subtle) !important;
+    --bs-secondary-bg-subtle: var(--secondary-subtle) !important;
+    --bs-primary-text-emphasis: var(--primary-focus-color) !important;
+    --bs-secondary-text-emphasis: var(--secondary-focus-color) !important;
 
     --second-font-family: 'Poppins', sans-serif;
 }
@@ -52,6 +62,73 @@ body {
     width: 100vw;
 }
 
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--primary-hover-color);
+    --bs-btn-hover-border-color: var(--primary-hover-color);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--primary-active-color);
+    --bs-btn-active-border-color: var(--primary-active-color);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--primary-focus-color);
+    --bs-btn-disabled-border-color: var(--primary-focus-color);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--bs-primary);
+    --bs-btn-hover-border-color: var(--bs-primary);
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--primary-active-color);
+    --bs-btn-active-border-color: var(--primary-active-color);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--primary-focus-color);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--primary-focus-color);
+    --bs-gradient: none;
+}
+
+.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-secondary);
+    --bs-btn-border-color: var(--bs-secondary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--secondary-hover-color);
+    --bs-btn-hover-border-color: var(--secondary-hover-color);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--secondary-active-color);
+    --bs-btn-active-border-color: var(--secondary-active-color);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--secondary-focus-color);
+    --bs-btn-disabled-border-color: var(--secondary-focus-color);
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: var(--bs-secondary);
+    --bs-btn-border-color: var(--bs-secondary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--bs-secondary);
+    --bs-btn-hover-border-color: var(--bs-secondary);
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--secondary-active-color);
+    --bs-btn-active-border-color: var(--secondary-active-color);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--secondary-focus-color);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--secondary-focus-color);
+    --bs-gradient: none;
+}
 
 /* Override Bootstrap Navbar Styles */
 .navbar {
