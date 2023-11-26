@@ -2,7 +2,8 @@
 {% load i18n %}
 {% get_current_language as CURRENT_LANGUAGE %}
 <!DOCTYPE html>
-<html lang="{{ CURRENT_LANGUAGE }}" style="overflow-x: hidden" dir="{% if CURRENT_LANGUAGE == 'ar' %}rtl{% else %}ltr{% endif %}">
+<html lang="{{ CURRENT_LANGUAGE }}" style="overflow-x: hidden"
+      dir="{% if CURRENT_LANGUAGE == 'ar' %}rtl{% else %}ltr{% endif %}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,9 +43,15 @@
 
     {% endwith %}
 
-    <link href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}?v={{ asset_version }}" async="true"
-          rel="stylesheet"
-          type="text/css"/>
+    {% if CURRENT_LANGUAGE == 'ar' %}
+        <link href="{% static 'assets/bootstrap/css/bootstrap.rtl.min.css' %}?v={{ asset_version }}" async="true"
+              rel="stylesheet"
+              type="text/css"/>
+    {% else %}
+        <link href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}?v={{ asset_version }}" async="true"
+              rel="stylesheet"
+              type="text/css"/>
+    {% endif %}
     <link href="{% static 'assets/bootstrap-icons/bootstrap-icons.css' %}?v={{ asset_version }}" async="true"
           rel="stylesheet"
           type="text/css"/>
